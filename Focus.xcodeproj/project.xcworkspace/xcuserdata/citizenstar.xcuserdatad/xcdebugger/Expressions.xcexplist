@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "GameScene.generateCeilingRabbit():GameScene.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "rabbitForGenerateConveyor.position">
+            </PersistentString>
+            <PersistentString
+               value = "rabbitForGenerateCeiling.zPosition">
+            </PersistentString>
+            <PersistentString
+               value = "rabbitForGenerateCeiling.position">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GameScene.addedCageToRabbit(node:):GameScene.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "node.position">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GameScene.generateRabbit():GameScene.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "rabbitForGenerateConveyor.position">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
