@@ -19,8 +19,6 @@
 		56CF1F0B240479260064A02A /* Rabbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CF1F0A240479260064A02A /* Rabbit.swift */; };
 		56CF1F0E240484BB0064A02A /* SKSceneExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CF1F0D240484BB0064A02A /* SKSceneExtension.swift */; };
 		56CF1F1024048D0E0064A02A /* AppBitMasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CF1F0F24048D0E0064A02A /* AppBitMasks.swift */; };
-		56F5992C2470C39800E3EDD7 /* ConveyorBoxSmoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56F5992A2470C39800E3EDD7 /* ConveyorBoxSmoke.sks */; };
-		56F5992D2470C39800E3EDD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56F5992B2470C39800E3EDD7 /* Assets.xcassets */; };
 		56F5992F2471723500E3EDD7 /* SKColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F5992E2471723500E3EDD7 /* SKColorExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,8 +38,6 @@
 		56CF1F0A240479260064A02A /* Rabbit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rabbit.swift; sourceTree = "<group>"; };
 		56CF1F0D240484BB0064A02A /* SKSceneExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKSceneExtension.swift; sourceTree = "<group>"; };
 		56CF1F0F24048D0E0064A02A /* AppBitMasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBitMasks.swift; sourceTree = "<group>"; };
-		56F5992A2470C39800E3EDD7 /* ConveyorBoxSmoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ConveyorBoxSmoke.sks; sourceTree = "<group>"; };
-		56F5992B2470C39800E3EDD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56F5992E2471723500E3EDD7 /* SKColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,7 +71,6 @@
 		562935D723F8971400F3F0D0 /* Focus */ = {
 			isa = PBXGroup;
 			children = (
-				56F599252470C28E00E3EDD7 /* Effects */,
 				5668539924708A88006A3D36 /* Controllers */,
 				56393372246703EF005CB0C0 /* System */,
 				5639337324670BD4005CB0C0 /* Nodes */,
@@ -183,15 +178,6 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		56F599252470C28E00E3EDD7 /* Effects */ = {
-			isa = PBXGroup;
-			children = (
-				56F5992A2470C39800E3EDD7 /* ConveyorBoxSmoke.sks */,
-				56F5992B2470C39800E3EDD7 /* Assets.xcassets */,
-			);
-			path = Effects;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -252,9 +238,7 @@
 			files = (
 				562935E423F8971400F3F0D0 /* Main.storyboard in Resources */,
 				562935DB23F8971400F3F0D0 /* MainMenuScene.sks in Resources */,
-				56F5992C2470C39800E3EDD7 /* ConveyorBoxSmoke.sks in Resources */,
 				562935E623F8971500F3F0D0 /* Assets.xcassets in Resources */,
-				56F5992D2470C39800E3EDD7 /* Assets.xcassets in Resources */,
 				562935E923F8971500F3F0D0 /* LaunchScreen.storyboard in Resources */,
 				562935DD23F8971400F3F0D0 /* Actions.sks in Resources */,
 			);
