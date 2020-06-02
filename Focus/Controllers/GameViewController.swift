@@ -17,20 +17,28 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-            // Load the SKScene from 'MainMenuScene.sks'
-            if let scene = SKScene(fileNamed: "MainMenuScene") {
-                // Set the scale mode to scale to fit the window
-                scene.scaleMode = .aspectFill
-                
-                // Present the scene
-                skView.presentScene(scene)
-            }
-            
-            skView.ignoresSiblingOrder = true
-            
-            skView.showsFPS = true
-            skView.showsNodeCount = true
-        
+        configuredSKView()
+        setMainMenuScene()
+    }
+    
+    // Load the SKScene from 'MainMenuScene.sks'
+    func setMainMenuScene() {
+        if let scene = SKScene(fileNamed: "MainMenuScene") {
+            scene.scaleMode = .aspectFill
+            skView.presentScene(scene)
+        }
+    }
+    
+    func setFarmScene() {
+           if let scene = SKScene(fileNamed: "FarmScene") {
+               skView.presentScene(scene)
+           }
+       }
+    
+    func configuredSKView() {
+        skView.ignoresSiblingOrder = true
+        skView.showsFPS = true
+        skView.showsNodeCount = true
     }
 
     override var shouldAutorotate: Bool {

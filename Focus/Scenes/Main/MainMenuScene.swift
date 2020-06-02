@@ -47,7 +47,6 @@ class MainMenuScene: SKScene {
         runRotateGears()
     }
     
-    
     func runRotateGears() {
         enumerateChildNodes(withName: "gear", using: { node, stop in
             let actionRotate = SKAction.rotate(byAngle: -10, duration: 10)

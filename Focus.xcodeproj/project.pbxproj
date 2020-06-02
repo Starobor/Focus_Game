@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		561197042486DD0E0098251C /* TreeScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 561197032486DD0E0098251C /* TreeScene.sks */; };
+		561197062486DD1B0098251C /* TreeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561197052486DD1B0098251C /* TreeScene.swift */; };
 		562935D923F8971400F3F0D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562935D823F8971400F3F0D0 /* AppDelegate.swift */; };
 		562935DB23F8971400F3F0D0 /* MainMenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 562935DA23F8971400F3F0D0 /* MainMenuScene.sks */; };
 		562935DD23F8971400F3F0D0 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 562935DC23F8971400F3F0D0 /* Actions.sks */; };
@@ -15,14 +17,22 @@
 		562935E423F8971400F3F0D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 562935E223F8971400F3F0D0 /* Main.storyboard */; };
 		562935E623F8971500F3F0D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 562935E523F8971500F3F0D0 /* Assets.xcassets */; };
 		562935E923F8971500F3F0D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 562935E723F8971500F3F0D0 /* LaunchScreen.storyboard */; };
-		569178A0246841E100286949 /* ConveyorCage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691789F246841E100286949 /* ConveyorCage.swift */; };
-		56CF1F0B240479260064A02A /* Rabbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CF1F0A240479260064A02A /* Rabbit.swift */; };
+		56889CE62479E1F1009F3BF8 /* FarmScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56889CE52479E1F1009F3BF8 /* FarmScene.sks */; };
+		56889CE82479E2A5009F3BF8 /* FarmScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56889CE72479E2A4009F3BF8 /* FarmScene.swift */; };
+		56889CF12479ED9A009F3BF8 /* GardenScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56889CF02479ED9A009F3BF8 /* GardenScene.sks */; };
+		56889CF32479EDAA009F3BF8 /* MarketGardenScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56889CF22479EDAA009F3BF8 /* MarketGardenScene.sks */; };
+		56889CF72479EDCF009F3BF8 /* MarketGardenScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56889CF62479EDCF009F3BF8 /* MarketGardenScene.swift */; };
+		56889CF92479EDE6009F3BF8 /* GardenScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56889CF82479EDE6009F3BF8 /* GardenScene.swift */; };
+		56889CFD2479FDE0009F3BF8 /* WaterWellScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56889CFC2479FDE0009F3BF8 /* WaterWellScene.sks */; };
+		56889CFF2479FDF9009F3BF8 /* WaterWellScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56889CFE2479FDF9009F3BF8 /* WaterWellScene.swift */; };
 		56CF1F0E240484BB0064A02A /* SKSceneExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CF1F0D240484BB0064A02A /* SKSceneExtension.swift */; };
 		56CF1F1024048D0E0064A02A /* AppBitMasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CF1F0F24048D0E0064A02A /* AppBitMasks.swift */; };
 		56F5992F2471723500E3EDD7 /* SKColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F5992E2471723500E3EDD7 /* SKColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		561197032486DD0E0098251C /* TreeScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TreeScene.sks; sourceTree = "<group>"; };
+		561197052486DD1B0098251C /* TreeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeScene.swift; sourceTree = "<group>"; };
 		562935D523F8971400F3F0D0 /* Focus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Focus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		562935D823F8971400F3F0D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		562935DA23F8971400F3F0D0 /* MainMenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenuScene.sks; sourceTree = "<group>"; };
@@ -33,9 +43,15 @@
 		562935E523F8971500F3F0D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		562935E823F8971500F3F0D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		562935EA23F8971500F3F0D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5691789F246841E100286949 /* ConveyorCage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConveyorCage.swift; sourceTree = "<group>"; };
+		56889CE52479E1F1009F3BF8 /* FarmScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FarmScene.sks; sourceTree = "<group>"; };
+		56889CE72479E2A4009F3BF8 /* FarmScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmScene.swift; sourceTree = "<group>"; };
+		56889CF02479ED9A009F3BF8 /* GardenScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GardenScene.sks; sourceTree = "<group>"; };
+		56889CF22479EDAA009F3BF8 /* MarketGardenScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MarketGardenScene.sks; sourceTree = "<group>"; };
+		56889CF62479EDCF009F3BF8 /* MarketGardenScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketGardenScene.swift; sourceTree = "<group>"; };
+		56889CF82479EDE6009F3BF8 /* GardenScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenScene.swift; sourceTree = "<group>"; };
+		56889CFC2479FDE0009F3BF8 /* WaterWellScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = WaterWellScene.sks; sourceTree = "<group>"; };
+		56889CFE2479FDF9009F3BF8 /* WaterWellScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterWellScene.swift; sourceTree = "<group>"; };
 		56CF1F07240415120064A02A /* Focus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Focus.entitlements; sourceTree = "<group>"; };
-		56CF1F0A240479260064A02A /* Rabbit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rabbit.swift; sourceTree = "<group>"; };
 		56CF1F0D240484BB0064A02A /* SKSceneExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKSceneExtension.swift; sourceTree = "<group>"; };
 		56CF1F0F24048D0E0064A02A /* AppBitMasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBitMasks.swift; sourceTree = "<group>"; };
 		56F5992E2471723500E3EDD7 /* SKColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKColorExtension.swift; sourceTree = "<group>"; };
@@ -52,6 +68,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		561197002486DCCB0098251C /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				561197032486DD0E0098251C /* TreeScene.sks */,
+				561197052486DD1B0098251C /* TreeScene.swift */,
+			);
+			path = Tree;
+			sourceTree = "<group>";
+		};
 		562935CC23F8971400F3F0D0 = {
 			isa = PBXGroup;
 			children = (
@@ -71,10 +96,10 @@
 		562935D723F8971400F3F0D0 /* Focus */ = {
 			isa = PBXGroup;
 			children = (
-				5668539924708A88006A3D36 /* Controllers */,
 				56393372246703EF005CB0C0 /* System */,
 				5639337324670BD4005CB0C0 /* Nodes */,
 				5668539824708A17006A3D36 /* Storyboards */,
+				5668539924708A88006A3D36 /* Controllers */,
 				56C8E98A24001A06006E3802 /* Scenes */,
 				5668539A24708A94006A3D36 /* Actions */,
 				56CF1F0C240484770064A02A /* Extension */,
@@ -97,7 +122,6 @@
 		5639337324670BD4005CB0C0 /* Nodes */ = {
 			isa = PBXGroup;
 			children = (
-				5691789F246841E100286949 /* ConveyorCage.swift */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -130,10 +154,65 @@
 		5668539B24708B10006A3D36 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				562935DE23F8971400F3F0D0 /* MainMenuScene.swift */,
 				562935DA23F8971400F3F0D0 /* MainMenuScene.sks */,
+				562935DE23F8971400F3F0D0 /* MainMenuScene.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		56889CE42479E1C3009F3BF8 /* Farm */ = {
+			isa = PBXGroup;
+			children = (
+				56889CE52479E1F1009F3BF8 /* FarmScene.sks */,
+				56889CE72479E2A4009F3BF8 /* FarmScene.swift */,
+			);
+			path = Farm;
+			sourceTree = "<group>";
+		};
+		56889CE92479EA7E009F3BF8 /* FarmArea */ = {
+			isa = PBXGroup;
+			children = (
+				56889CE42479E1C3009F3BF8 /* Farm */,
+				56889CEB2479EB00009F3BF8 /* MarketGarden  */,
+				56889CEA2479EAA6009F3BF8 /* Garden */,
+				561197002486DCCB0098251C /* Tree */,
+				56889CFB2479FC3B009F3BF8 /* WaterWell  */,
+			);
+			path = FarmArea;
+			sourceTree = "<group>";
+		};
+		56889CEA2479EAA6009F3BF8 /* Garden */ = {
+			isa = PBXGroup;
+			children = (
+				56889CF02479ED9A009F3BF8 /* GardenScene.sks */,
+				56889CF82479EDE6009F3BF8 /* GardenScene.swift */,
+			);
+			path = Garden;
+			sourceTree = "<group>";
+		};
+		56889CEB2479EB00009F3BF8 /* MarketGarden  */ = {
+			isa = PBXGroup;
+			children = (
+				56889CF22479EDAA009F3BF8 /* MarketGardenScene.sks */,
+				56889CF62479EDCF009F3BF8 /* MarketGardenScene.swift */,
+			);
+			path = "MarketGarden ";
+			sourceTree = "<group>";
+		};
+		56889CFA2479F431009F3BF8 /* Minigames */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Minigames;
+			sourceTree = "<group>";
+		};
+		56889CFB2479FC3B009F3BF8 /* WaterWell  */ = {
+			isa = PBXGroup;
+			children = (
+				56889CFC2479FDE0009F3BF8 /* WaterWellScene.sks */,
+				56889CFE2479FDF9009F3BF8 /* WaterWellScene.swift */,
+			);
+			path = "WaterWell ";
 			sourceTree = "<group>";
 		};
 		569178A12468543700286949 /* Resources */ = {
@@ -147,6 +226,8 @@
 		56C8E98A24001A06006E3802 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				56889CFA2479F431009F3BF8 /* Minigames */,
+				56889CE92479EA7E009F3BF8 /* FarmArea */,
 				5668539B24708B10006A3D36 /* Main */,
 			);
 			path = Scenes;
@@ -155,18 +236,9 @@
 		56CF1F08240478C30064A02A /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				56CF1F09240478F20064A02A /* Hero */,
 				56CF1F0F24048D0E0064A02A /* AppBitMasks.swift */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		56CF1F09240478F20064A02A /* Hero */ = {
-			isa = PBXGroup;
-			children = (
-				56CF1F0A240479260064A02A /* Rabbit.swift */,
-			);
-			path = Hero;
 			sourceTree = "<group>";
 		};
 		56CF1F0C240484770064A02A /* Extension */ = {
@@ -236,11 +308,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56889CE62479E1F1009F3BF8 /* FarmScene.sks in Resources */,
 				562935E423F8971400F3F0D0 /* Main.storyboard in Resources */,
+				56889CFD2479FDE0009F3BF8 /* WaterWellScene.sks in Resources */,
 				562935DB23F8971400F3F0D0 /* MainMenuScene.sks in Resources */,
 				562935E623F8971500F3F0D0 /* Assets.xcassets in Resources */,
 				562935E923F8971500F3F0D0 /* LaunchScreen.storyboard in Resources */,
+				561197042486DD0E0098251C /* TreeScene.sks in Resources */,
+				56889CF12479ED9A009F3BF8 /* GardenScene.sks in Resources */,
 				562935DD23F8971400F3F0D0 /* Actions.sks in Resources */,
+				56889CF32479EDAA009F3BF8 /* MarketGardenScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,14 +328,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56889CFF2479FDF9009F3BF8 /* WaterWellScene.swift in Sources */,
 				56CF1F0E240484BB0064A02A /* SKSceneExtension.swift in Sources */,
 				56CF1F1024048D0E0064A02A /* AppBitMasks.swift in Sources */,
-				569178A0246841E100286949 /* ConveyorCage.swift in Sources */,
 				56F5992F2471723500E3EDD7 /* SKColorExtension.swift in Sources */,
 				562935DF23F8971400F3F0D0 /* MainMenuScene.swift in Sources */,
+				56889CE82479E2A5009F3BF8 /* FarmScene.swift in Sources */,
+				56889CF72479EDCF009F3BF8 /* MarketGardenScene.swift in Sources */,
+				56889CF92479EDE6009F3BF8 /* GardenScene.swift in Sources */,
 				562935E123F8971400F3F0D0 /* GameViewController.swift in Sources */,
 				562935D923F8971400F3F0D0 /* AppDelegate.swift in Sources */,
-				56CF1F0B240479260064A02A /* Rabbit.swift in Sources */,
+				561197062486DD1B0098251C /* TreeScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

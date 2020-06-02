@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "фокус перший рівень ферма-66.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "фокус перший рівень ферма-67.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "фокус перший рівень ферма-68.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
