@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "фокус екран загрузки (2)-2.png",
+      "filename" : "стрічка верх.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "фокус екран загрузки (2)-3.png",
+      "filename" : "стрічка верх-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "фокус екран загрузки (2)-4.png",
+      "filename" : "стрічка верх-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

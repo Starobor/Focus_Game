@@ -7,60 +7,62 @@
 //
 
 import SpriteKit
-import GameplayKit
 
-class MarketGardenScene: SKScene {
+class MarketGardenScene: BaseMapScene {
+    
+    enum InteractedNodes: String {
+        case well
+        case leafsFirst
+        case sheep
+        case horse
+    }
     
     override func didMove(to view: SKView) {
-        configureScene()
-        configureNodes()
-    }
-    
-    func configureScene() {
-        self.physicsWorld.contactDelegate = self
-    }
-    
-    func configureNodes() {
-       
-    }
-
-    func touchDown(atPoint pos : CGPoint) {
+        super.didMove(to: view)
         
     }
     
-    func touchMoved(toPoint pos : CGPoint) {
+    override func touchDown(atPoint pos : CGPoint) {
+        super.touchDown(atPoint: pos)
         
     }
     
-    func touchUp(atPoint pos : CGPoint) {
+    override func touchMoved(toPoint pos : CGPoint) {
+        super.touchMoved(toPoint: pos)
+        
+    }
+    
+    override func touchUp(atPoint pos : CGPoint) {
+        super.touchUp(atPoint: pos)
         
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
         
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesMoved(touches, with: event)
         
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesEnded(touches, with: event)
         
     }
     
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesCancelled(touches, with: event)
         
     }
     
     override func update(_ currentTime: TimeInterval) {
-     
+        super.update(currentTime)
+        
     }
     
-}
-
-extension MarketGardenScene: SKPhysicsContactDelegate {
-    
-    func didBegin(_ contact: SKPhysicsContact) {
-        
+    override func pressedHero(node: BaseHero) {
+        print(node.helloSentence)
     }
 }

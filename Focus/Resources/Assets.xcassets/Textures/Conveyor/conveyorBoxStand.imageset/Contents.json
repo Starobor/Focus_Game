@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "7.png",
+      "filename" : "радіатор ніжка.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "7-1.png",
+      "filename" : "радіатор ніжка-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "7-2.png",
+      "filename" : "радіатор ніжка-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

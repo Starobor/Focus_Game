@@ -11,7 +11,7 @@ import SpriteKit
 import GameplayKit
 
 class GameViewController: UIViewController {
-
+    
     @IBOutlet weak var skView: SKView!
     
     override func viewDidLoad() {
@@ -19,32 +19,40 @@ class GameViewController: UIViewController {
         
         configuredSKView()
         setMainMenuScene()
+        
+    }
+    
+    func setSceneType<T: BaseMapScene>(_ type: T.Type) {
+        print("set scene as: \(type)")
+        if let scene = GKScene(fileNamed: "\(T.self)")   {
+            if let sceneNode = scene.rootNode as! T? {
+                sceneNode.entities = scene.entities
+                sceneNode.graphs = scene.graphs
+                skView.presentScene(sceneNode)
+            }
+        }
     }
     
     // Load the SKScene from 'MainMenuScene.sks'
     func setMainMenuScene() {
-        if let scene = SKScene(fileNamed: "MainMenuScene") {
+        if let scene = SKScene(fileNamed: "MainMenuScene") as? MainMenuScene {
             scene.scaleMode = .aspectFill
+            scene.mainMenuDelegate = self
             skView.presentScene(scene)
         }
     }
-    
-    func setFarmScene() {
-           if let scene = SKScene(fileNamed: "FarmScene") {
-               skView.presentScene(scene)
-           }
-       }
     
     func configuredSKView() {
         skView.ignoresSiblingOrder = true
         skView.showsFPS = true
         skView.showsNodeCount = true
+        skView.preferredFramesPerSecond = 30
     }
-
+    
     override var shouldAutorotate: Bool {
         return true
     }
-
+    
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         if UIDevice.current.userInterfaceIdiom == .phone {
             return .allButUpsideDown
@@ -52,8 +60,14 @@ class GameViewController: UIViewController {
             return .all
         }
     }
-
+    
     override var prefersStatusBarHidden: Bool {
         return true
+    }
+}
+
+extension GameViewController: MainMenuDelegate {
+    func gameIsStart() {
+        setSceneType(FarmScene.self)
     }
 }

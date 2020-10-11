@@ -11,12 +11,19 @@
 		561197062486DD1B0098251C /* TreeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561197052486DD1B0098251C /* TreeScene.swift */; };
 		562935D923F8971400F3F0D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562935D823F8971400F3F0D0 /* AppDelegate.swift */; };
 		562935DB23F8971400F3F0D0 /* MainMenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 562935DA23F8971400F3F0D0 /* MainMenuScene.sks */; };
-		562935DD23F8971400F3F0D0 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 562935DC23F8971400F3F0D0 /* Actions.sks */; };
 		562935DF23F8971400F3F0D0 /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562935DE23F8971400F3F0D0 /* MainMenuScene.swift */; };
 		562935E123F8971400F3F0D0 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562935E023F8971400F3F0D0 /* GameViewController.swift */; };
 		562935E423F8971400F3F0D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 562935E223F8971400F3F0D0 /* Main.storyboard */; };
 		562935E623F8971500F3F0D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 562935E523F8971500F3F0D0 /* Assets.xcassets */; };
 		562935E923F8971500F3F0D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 562935E723F8971500F3F0D0 /* LaunchScreen.storyboard */; };
+		56390102250AAF3A00347569 /* BaseMapScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56390101250AAF3A00347569 /* BaseMapScene.swift */; };
+		56390104250AC76400347569 /* MainCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56390103250AC76400347569 /* MainCharacter.swift */; };
+		56390108250ACA6400347569 /* BaseHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56390107250ACA6400347569 /* BaseHero.swift */; };
+		566444E12527738F00F39D24 /* NormalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566444E02527738F00F39D24 /* NormalState.swift */; };
+		56785ADF252A09910020C832 /* MainHeroActions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56785ADE252A09910020C832 /* MainHeroActions.sks */; };
+		56785AE7252A1F3D0020C832 /* AnimateComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56785AE6252A1F3D0020C832 /* AnimateComponent.swift */; };
+		56785BFD252CB75B0020C832 /* HorseCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56785BFC252CB75B0020C832 /* HorseCharacter.swift */; };
+		56785C06252CC6180020C832 /* main_menu_background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 56785C05252CC6180020C832 /* main_menu_background.mp3 */; };
 		56889CE62479E1F1009F3BF8 /* FarmScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56889CE52479E1F1009F3BF8 /* FarmScene.sks */; };
 		56889CE82479E2A5009F3BF8 /* FarmScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56889CE72479E2A4009F3BF8 /* FarmScene.swift */; };
 		56889CF12479ED9A009F3BF8 /* GardenScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56889CF02479ED9A009F3BF8 /* GardenScene.sks */; };
@@ -25,8 +32,19 @@
 		56889CF92479EDE6009F3BF8 /* GardenScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56889CF82479EDE6009F3BF8 /* GardenScene.swift */; };
 		56889CFD2479FDE0009F3BF8 /* WaterWellScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56889CFC2479FDE0009F3BF8 /* WaterWellScene.sks */; };
 		56889CFF2479FDF9009F3BF8 /* WaterWellScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56889CFE2479FDF9009F3BF8 /* WaterWellScene.swift */; };
+		56B16DD8252E2D9F00AC21B7 /* InteractableMainHeroButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B16DD7252E2D9F00AC21B7 /* InteractableMainHeroButtons.swift */; };
+		56B16DDB252E2F5D00AC21B7 /* PlayerInteractableButtonsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B16DDA252E2F5D00AC21B7 /* PlayerInteractableButtonsComponent.swift */; };
+		56B16DDF252F4DFF00AC21B7 /* ES_Factory Conveyor 1 - SFX Producer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 56B16DDE252F4DFF00AC21B7 /* ES_Factory Conveyor 1 - SFX Producer.mp3 */; };
+		56B16DE9252F52FA00AC21B7 /* ES_Steam Engine Tractor 34 - SFX Producer (cut).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 56B16DE8252F52FA00AC21B7 /* ES_Steam Engine Tractor 34 - SFX Producer (cut).mp3 */; };
+		56B16DF1252F667200AC21B7 /* ES_Slot Machine Pull 2 - SFX Producer(cut) on.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 56B16DF0252F667200AC21B7 /* ES_Slot Machine Pull 2 - SFX Producer(cut) on.mp3 */; };
+		56B16DF42532762900AC21B7 /* MainMenuHeroActions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56B16DF32532762900AC21B7 /* MainMenuHeroActions.sks */; };
 		56CF1F0E240484BB0064A02A /* SKSceneExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CF1F0D240484BB0064A02A /* SKSceneExtension.swift */; };
 		56CF1F1024048D0E0064A02A /* AppBitMasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CF1F0F24048D0E0064A02A /* AppBitMasks.swift */; };
+		56D063DB24D4B5A9003D6A0A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D063DA24D4B5A9003D6A0A /* StringExtension.swift */; };
+		56D063DD24D4B61A003D6A0A /* SKTextureExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D063DC24D4B61A003D6A0A /* SKTextureExtension.swift */; };
+		56D063DF24D4BD67003D6A0A /* TouchHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D063DE24D4BD67003D6A0A /* TouchHelper.swift */; };
+		56E490E22527D17F00D4D79C /* TouchControlInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E490E12527D17F00D4D79C /* TouchControlInput.swift */; };
+		56E490E62527DD4000D4D79C /* PlayerControlComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E490E52527DD4000D4D79C /* PlayerControlComponent.swift */; };
 		56F5992F2471723500E3EDD7 /* SKColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F5992E2471723500E3EDD7 /* SKColorExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,13 +54,20 @@
 		562935D523F8971400F3F0D0 /* Focus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Focus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		562935D823F8971400F3F0D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		562935DA23F8971400F3F0D0 /* MainMenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenuScene.sks; sourceTree = "<group>"; };
-		562935DC23F8971400F3F0D0 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		562935DE23F8971400F3F0D0 /* MainMenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
 		562935E023F8971400F3F0D0 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		562935E323F8971400F3F0D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		562935E523F8971500F3F0D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		562935E823F8971500F3F0D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		562935EA23F8971500F3F0D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56390101250AAF3A00347569 /* BaseMapScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMapScene.swift; sourceTree = "<group>"; };
+		56390103250AC76400347569 /* MainCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCharacter.swift; sourceTree = "<group>"; };
+		56390107250ACA6400347569 /* BaseHero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseHero.swift; sourceTree = "<group>"; };
+		566444E02527738F00F39D24 /* NormalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalState.swift; sourceTree = "<group>"; };
+		56785ADE252A09910020C832 /* MainHeroActions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainHeroActions.sks; sourceTree = "<group>"; };
+		56785AE6252A1F3D0020C832 /* AnimateComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateComponent.swift; sourceTree = "<group>"; };
+		56785BFC252CB75B0020C832 /* HorseCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorseCharacter.swift; sourceTree = "<group>"; };
+		56785C05252CC6180020C832 /* main_menu_background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = main_menu_background.mp3; sourceTree = "<group>"; };
 		56889CE52479E1F1009F3BF8 /* FarmScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FarmScene.sks; sourceTree = "<group>"; };
 		56889CE72479E2A4009F3BF8 /* FarmScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmScene.swift; sourceTree = "<group>"; };
 		56889CF02479ED9A009F3BF8 /* GardenScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GardenScene.sks; sourceTree = "<group>"; };
@@ -51,9 +76,20 @@
 		56889CF82479EDE6009F3BF8 /* GardenScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenScene.swift; sourceTree = "<group>"; };
 		56889CFC2479FDE0009F3BF8 /* WaterWellScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = WaterWellScene.sks; sourceTree = "<group>"; };
 		56889CFE2479FDF9009F3BF8 /* WaterWellScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterWellScene.swift; sourceTree = "<group>"; };
+		56B16DD7252E2D9F00AC21B7 /* InteractableMainHeroButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractableMainHeroButtons.swift; sourceTree = "<group>"; };
+		56B16DDA252E2F5D00AC21B7 /* PlayerInteractableButtonsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInteractableButtonsComponent.swift; sourceTree = "<group>"; };
+		56B16DDE252F4DFF00AC21B7 /* ES_Factory Conveyor 1 - SFX Producer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ES_Factory Conveyor 1 - SFX Producer.mp3"; sourceTree = "<group>"; };
+		56B16DE8252F52FA00AC21B7 /* ES_Steam Engine Tractor 34 - SFX Producer (cut).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ES_Steam Engine Tractor 34 - SFX Producer (cut).mp3"; sourceTree = "<group>"; };
+		56B16DF0252F667200AC21B7 /* ES_Slot Machine Pull 2 - SFX Producer(cut) on.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ES_Slot Machine Pull 2 - SFX Producer(cut) on.mp3"; sourceTree = "<group>"; };
+		56B16DF32532762900AC21B7 /* MainMenuHeroActions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenuHeroActions.sks; sourceTree = "<group>"; };
 		56CF1F07240415120064A02A /* Focus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Focus.entitlements; sourceTree = "<group>"; };
 		56CF1F0D240484BB0064A02A /* SKSceneExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKSceneExtension.swift; sourceTree = "<group>"; };
 		56CF1F0F24048D0E0064A02A /* AppBitMasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBitMasks.swift; sourceTree = "<group>"; };
+		56D063DA24D4B5A9003D6A0A /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		56D063DC24D4B61A003D6A0A /* SKTextureExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKTextureExtension.swift; sourceTree = "<group>"; };
+		56D063DE24D4BD67003D6A0A /* TouchHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchHelper.swift; sourceTree = "<group>"; };
+		56E490E12527D17F00D4D79C /* TouchControlInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchControlInput.swift; sourceTree = "<group>"; };
+		56E490E52527DD4000D4D79C /* PlayerControlComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControlComponent.swift; sourceTree = "<group>"; };
 		56F5992E2471723500E3EDD7 /* SKColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				56393372246703EF005CB0C0 /* System */,
+				566444DF2527736A00F39D24 /* States */,
+				56E490E42527DD1600D4D79C /* Components */,
 				5639337324670BD4005CB0C0 /* Nodes */,
 				5668539824708A17006A3D36 /* Storyboards */,
 				5668539924708A88006A3D36 /* Controllers */,
@@ -107,6 +145,14 @@
 				569178A12468543700286949 /* Resources */,
 			);
 			path = Focus;
+			sourceTree = "<group>";
+		};
+		56390100250AAEB100347569 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				56390101250AAF3A00347569 /* BaseMapScene.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		56393372246703EF005CB0C0 /* System */ = {
@@ -122,8 +168,28 @@
 		5639337324670BD4005CB0C0 /* Nodes */ = {
 			isa = PBXGroup;
 			children = (
+				56E490DE2527810F00D4D79C /* Controls */,
+				566444DE252771C300F39D24 /* Characters */,
 			);
 			path = Nodes;
+			sourceTree = "<group>";
+		};
+		566444DE252771C300F39D24 /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				56785BFB252CB7140020C832 /* Base */,
+				56390103250AC76400347569 /* MainCharacter.swift */,
+				56785BFC252CB75B0020C832 /* HorseCharacter.swift */,
+			);
+			path = Characters;
+			sourceTree = "<group>";
+		};
+		566444DF2527736A00F39D24 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				566444E02527738F00F39D24 /* NormalState.swift */,
+			);
+			path = States;
 			sourceTree = "<group>";
 		};
 		5668539824708A17006A3D36 /* Storyboards */ = {
@@ -146,7 +212,8 @@
 		5668539A24708A94006A3D36 /* Actions */ = {
 			isa = PBXGroup;
 			children = (
-				562935DC23F8971400F3F0D0 /* Actions.sks */,
+				56785ADE252A09910020C832 /* MainHeroActions.sks */,
+				56B16DF32532762900AC21B7 /* MainMenuHeroActions.sks */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -158,6 +225,14 @@
 				562935DE23F8971400F3F0D0 /* MainMenuScene.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		56785BFB252CB7140020C832 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				56390107250ACA6400347569 /* BaseHero.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		56889CE42479E1C3009F3BF8 /* Farm */ = {
@@ -218,14 +293,26 @@
 		569178A12468543700286949 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				56D063E024D5F15A003D6A0A /* Sounds */,
 				562935E523F8971500F3F0D0 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		56B16DDD252F4DC200AC21B7 /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				56B16DF0252F667200AC21B7 /* ES_Slot Machine Pull 2 - SFX Producer(cut) on.mp3 */,
+				56B16DE8252F52FA00AC21B7 /* ES_Steam Engine Tractor 34 - SFX Producer (cut).mp3 */,
+				56B16DDE252F4DFF00AC21B7 /* ES_Factory Conveyor 1 - SFX Producer.mp3 */,
+			);
+			path = Effects;
+			sourceTree = "<group>";
+		};
 		56C8E98A24001A06006E3802 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				56390100250AAEB100347569 /* Base */,
 				56889CFA2479F431009F3BF8 /* Minigames */,
 				56889CE92479EA7E009F3BF8 /* FarmArea */,
 				5668539B24708B10006A3D36 /* Main */,
@@ -237,6 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				56CF1F0F24048D0E0064A02A /* AppBitMasks.swift */,
+				56D063DE24D4BD67003D6A0A /* TouchHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -246,8 +334,46 @@
 			children = (
 				56CF1F0D240484BB0064A02A /* SKSceneExtension.swift */,
 				56F5992E2471723500E3EDD7 /* SKColorExtension.swift */,
+				56D063DA24D4B5A9003D6A0A /* StringExtension.swift */,
+				56D063DC24D4B61A003D6A0A /* SKTextureExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		56D063E024D5F15A003D6A0A /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				56B16DDD252F4DC200AC21B7 /* Effects */,
+				56D063E324D5F16A003D6A0A /* Background */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		56D063E324D5F16A003D6A0A /* Background */ = {
+			isa = PBXGroup;
+			children = (
+				56785C05252CC6180020C832 /* main_menu_background.mp3 */,
+			);
+			path = Background;
+			sourceTree = "<group>";
+		};
+		56E490DE2527810F00D4D79C /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				56E490E12527D17F00D4D79C /* TouchControlInput.swift */,
+				56B16DD7252E2D9F00AC21B7 /* InteractableMainHeroButtons.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		56E490E42527DD1600D4D79C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				56E490E52527DD4000D4D79C /* PlayerControlComponent.swift */,
+				56785AE6252A1F3D0020C832 /* AnimateComponent.swift */,
+				56B16DDA252E2F5D00AC21B7 /* PlayerInteractableButtonsComponent.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,15 +434,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56785ADF252A09910020C832 /* MainHeroActions.sks in Resources */,
+				56B16DDF252F4DFF00AC21B7 /* ES_Factory Conveyor 1 - SFX Producer.mp3 in Resources */,
+				56B16DF1252F667200AC21B7 /* ES_Slot Machine Pull 2 - SFX Producer(cut) on.mp3 in Resources */,
 				56889CE62479E1F1009F3BF8 /* FarmScene.sks in Resources */,
+				56B16DF42532762900AC21B7 /* MainMenuHeroActions.sks in Resources */,
 				562935E423F8971400F3F0D0 /* Main.storyboard in Resources */,
+				56B16DE9252F52FA00AC21B7 /* ES_Steam Engine Tractor 34 - SFX Producer (cut).mp3 in Resources */,
 				56889CFD2479FDE0009F3BF8 /* WaterWellScene.sks in Resources */,
+				56785C06252CC6180020C832 /* main_menu_background.mp3 in Resources */,
 				562935DB23F8971400F3F0D0 /* MainMenuScene.sks in Resources */,
 				562935E623F8971500F3F0D0 /* Assets.xcassets in Resources */,
 				562935E923F8971500F3F0D0 /* LaunchScreen.storyboard in Resources */,
 				561197042486DD0E0098251C /* TreeScene.sks in Resources */,
 				56889CF12479ED9A009F3BF8 /* GardenScene.sks in Resources */,
-				562935DD23F8971400F3F0D0 /* Actions.sks in Resources */,
 				56889CF32479EDAA009F3BF8 /* MarketGardenScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,16 +460,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				56889CFF2479FDF9009F3BF8 /* WaterWellScene.swift in Sources */,
+				56D063DF24D4BD67003D6A0A /* TouchHelper.swift in Sources */,
 				56CF1F0E240484BB0064A02A /* SKSceneExtension.swift in Sources */,
 				56CF1F1024048D0E0064A02A /* AppBitMasks.swift in Sources */,
 				56F5992F2471723500E3EDD7 /* SKColorExtension.swift in Sources */,
 				562935DF23F8971400F3F0D0 /* MainMenuScene.swift in Sources */,
+				56390104250AC76400347569 /* MainCharacter.swift in Sources */,
 				56889CE82479E2A5009F3BF8 /* FarmScene.swift in Sources */,
+				56B16DDB252E2F5D00AC21B7 /* PlayerInteractableButtonsComponent.swift in Sources */,
 				56889CF72479EDCF009F3BF8 /* MarketGardenScene.swift in Sources */,
+				56390102250AAF3A00347569 /* BaseMapScene.swift in Sources */,
+				56785AE7252A1F3D0020C832 /* AnimateComponent.swift in Sources */,
+				56B16DD8252E2D9F00AC21B7 /* InteractableMainHeroButtons.swift in Sources */,
+				56E490E62527DD4000D4D79C /* PlayerControlComponent.swift in Sources */,
+				56785BFD252CB75B0020C832 /* HorseCharacter.swift in Sources */,
 				56889CF92479EDE6009F3BF8 /* GardenScene.swift in Sources */,
+				56D063DB24D4B5A9003D6A0A /* StringExtension.swift in Sources */,
 				562935E123F8971400F3F0D0 /* GameViewController.swift in Sources */,
 				562935D923F8971400F3F0D0 /* AppDelegate.swift in Sources */,
 				561197062486DD1B0098251C /* TreeScene.swift in Sources */,
+				566444E12527738F00F39D24 /* NormalState.swift in Sources */,
+				56390108250ACA6400347569 /* BaseHero.swift in Sources */,
+				56E490E22527D17F00D4D79C /* TouchControlInput.swift in Sources */,
+				56D063DD24D4B61A003D6A0A /* SKTextureExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,7 +558,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -468,7 +612,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

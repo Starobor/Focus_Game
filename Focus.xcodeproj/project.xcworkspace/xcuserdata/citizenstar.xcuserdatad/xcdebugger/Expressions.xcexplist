@@ -3,10 +3,82 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "GameScene.generateRabbit():GameScene.swift">
+         contextName = "MainMenuScene.configureNodes():MainMenuScene.swift">
          <PersistentStrings>
             <PersistentString
-               value = "rabbitForGenerateConveyor.position">
+               value = "floor">
+            </PersistentString>
+            <PersistentString
+               value = "startButton.button.size">
+            </PersistentString>
+            <PersistentString
+               value = "startButtonContainer?.size">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PlayerControlComponent.follow(command:):PlayerControlComponent.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cNode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "BaseMapScene.didMove(to:):BaseMapScene.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "mainHero.entity?.component(ofType: PlayerControlComponent.self)">
+            </PersistentString>
+            <PersistentString
+               value = "mainHero.name">
+            </PersistentString>
+            <PersistentString
+               value = "mainHero">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FarmScene.buildRabbit():FarmScene.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "rabbitWalkingAtlas.textureNames">
+            </PersistentString>
+            <PersistentString
+               value = "rabbitWalkingFrames">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AnimateComponent.update(deltaTime:):AnimateComponent.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cNode">
+            </PersistentString>
+            <PersistentString
+               value = " cNode!.right">
+            </PersistentString>
+            <PersistentString
+               value = "cNode?.action(forKey: &quot;walk&quot;)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MainMenuScene.startGame():MainMenuScene.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "mainMenuDelegate">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "BaseMapScene.touchesBegan(_:with:):BaseMapScene.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.atPoint(touchPoint).name">
+            </PersistentString>
+            <PersistentString
+               value = "self.atPoint(touchPoint) ">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -25,6 +97,81 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "MainMenuScene.update(_:):MainMenuScene.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "isMooveGround">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "BaseMapScene.configureMainHero():BaseMapScene.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.children">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FarmScene.getPressedScreenSide(point:):FarmScene.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.view?.frame.size.width ?? 0 ">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PlayerInteractableButtonsComponent.follow(command:):PlayerInteractableButtonsComponent.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "&quot;stop \(previousComand)&quot;">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MainMenuScene.actionNode(_:):MainMenuScene.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "spriteNode?.texture?.description">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "NormalState.update(deltaTime:):NormalState.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cNode.playerState ">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MainMenuScene.addedCageToRabbit(node:):MainMenuScene.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "">
+            </PersistentString>
+            <PersistentString
+               value = "node.action(forKey: &quot;rabbitStayAnimation&quot;)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FarmScene.configureNodes():FarmScene.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "floors">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FarmScene.animateBear():FarmScene.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "rabbitWalkingFrames">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "GameScene.addedCageToRabbit(node:):GameScene.swift">
          <PersistentStrings>
             <PersistentString
@@ -33,16 +180,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "MainMenuScene.configureNodes():MainMenuScene.swift">
+         contextName = "GameScene.generateRabbit():GameScene.swift">
          <PersistentStrings>
             <PersistentString
-               value = "floor">
-            </PersistentString>
-            <PersistentString
-               value = "startButton.button.size">
-            </PersistentString>
-            <PersistentString
-               value = "startButtonContainer?.size">
+               value = "rabbitForGenerateConveyor.position">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
