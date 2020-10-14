@@ -58,7 +58,7 @@ class BaseMapScene: SKScene {
     }
     
     override func didSimulatePhysics() {
-        self.mainCamera.position = CGPoint(x: mainHero.position.x, y: mainHero.position.y)
+        self.mainCamera.position = CGPoint(x: mainHero.position.x, y: mainHero.position.y + UIScreen.main.bounds.height/2)
     }
     
     func configureScene() {
@@ -100,11 +100,7 @@ class BaseMapScene: SKScene {
     
     func configureMainCamera() {
         mainCamera = SKCameraNode()
-        let screenBounds = UIScreen.main.bounds
-        let screenScale = UIScreen.main.scale
-        let screenSize = CGSize(width: screenBounds.size.width * screenScale, height: screenBounds.size.height * screenScale)
-        print(screenSize)
-        mainCamera.setScale(2)
+        mainCamera.setScale(6)
         self.addChild(mainCamera)
         self.camera = mainCamera
         

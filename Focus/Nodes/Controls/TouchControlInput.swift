@@ -37,12 +37,12 @@ class TouchControlInput: SKSpriteNode {
     
     func setupCntrollers(size: CGSize) {
         addButton(button: leftButton,
-                  position: CGPoint(x:  -size.width/2 + 70,
-                                    y: -size.height/2 + 70),
+                  position: CGPoint(x: -size.width/2 + 55,
+                                    y: -size.height/2 + 55),
                   name: "left")
         addButton(button: rightButton,
-                  position: CGPoint(x:  size.width/2 - 70,
-                                    y: -size.height/2 + 70),
+                  position: CGPoint(x:  size.width/2 - 55,
+                                    y: -size.height/2 + 55),
                   name: "right")
     }
     

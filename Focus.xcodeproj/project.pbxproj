@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -32,6 +32,8 @@
 		56889CF92479EDE6009F3BF8 /* GardenScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56889CF82479EDE6009F3BF8 /* GardenScene.swift */; };
 		56889CFD2479FDE0009F3BF8 /* WaterWellScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56889CFC2479FDE0009F3BF8 /* WaterWellScene.sks */; };
 		56889CFF2479FDF9009F3BF8 /* WaterWellScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56889CFE2479FDF9009F3BF8 /* WaterWellScene.swift */; };
+		569B8E6D253337BC001F939A /* DialogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569B8E6C253337BC001F939A /* DialogView.xib */; };
+		569B8E70253337D9001F939A /* DialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569B8E6F253337D9001F939A /* DialogView.swift */; };
 		56B16DD8252E2D9F00AC21B7 /* InteractableMainHeroButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B16DD7252E2D9F00AC21B7 /* InteractableMainHeroButtons.swift */; };
 		56B16DDB252E2F5D00AC21B7 /* PlayerInteractableButtonsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B16DDA252E2F5D00AC21B7 /* PlayerInteractableButtonsComponent.swift */; };
 		56B16DDF252F4DFF00AC21B7 /* ES_Factory Conveyor 1 - SFX Producer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 56B16DDE252F4DFF00AC21B7 /* ES_Factory Conveyor 1 - SFX Producer.mp3 */; };
@@ -46,9 +48,11 @@
 		56E490E22527D17F00D4D79C /* TouchControlInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E490E12527D17F00D4D79C /* TouchControlInput.swift */; };
 		56E490E62527DD4000D4D79C /* PlayerControlComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E490E52527DD4000D4D79C /* PlayerControlComponent.swift */; };
 		56F5992F2471723500E3EDD7 /* SKColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F5992E2471723500E3EDD7 /* SKColorExtension.swift */; };
+		738325275F1983B95950759B /* Pods_Focus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 081EE223125D81E2A4C7E2E9 /* Pods_Focus.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		081EE223125D81E2A4C7E2E9 /* Pods_Focus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Focus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		561197032486DD0E0098251C /* TreeScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TreeScene.sks; sourceTree = "<group>"; };
 		561197052486DD1B0098251C /* TreeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeScene.swift; sourceTree = "<group>"; };
 		562935D523F8971400F3F0D0 /* Focus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Focus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +80,8 @@
 		56889CF82479EDE6009F3BF8 /* GardenScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenScene.swift; sourceTree = "<group>"; };
 		56889CFC2479FDE0009F3BF8 /* WaterWellScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = WaterWellScene.sks; sourceTree = "<group>"; };
 		56889CFE2479FDF9009F3BF8 /* WaterWellScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterWellScene.swift; sourceTree = "<group>"; };
+		569B8E6C253337BC001F939A /* DialogView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DialogView.xib; sourceTree = "<group>"; };
+		569B8E6F253337D9001F939A /* DialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogView.swift; sourceTree = "<group>"; };
 		56B16DD7252E2D9F00AC21B7 /* InteractableMainHeroButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractableMainHeroButtons.swift; sourceTree = "<group>"; };
 		56B16DDA252E2F5D00AC21B7 /* PlayerInteractableButtonsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInteractableButtonsComponent.swift; sourceTree = "<group>"; };
 		56B16DDE252F4DFF00AC21B7 /* ES_Factory Conveyor 1 - SFX Producer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ES_Factory Conveyor 1 - SFX Producer.mp3"; sourceTree = "<group>"; };
@@ -91,6 +97,8 @@
 		56E490E12527D17F00D4D79C /* TouchControlInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchControlInput.swift; sourceTree = "<group>"; };
 		56E490E52527DD4000D4D79C /* PlayerControlComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControlComponent.swift; sourceTree = "<group>"; };
 		56F5992E2471723500E3EDD7 /* SKColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKColorExtension.swift; sourceTree = "<group>"; };
+		8DCEAF13FFA7712D6312CB86 /* Pods-Focus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Focus.release.xcconfig"; path = "Target Support Files/Pods-Focus/Pods-Focus.release.xcconfig"; sourceTree = "<group>"; };
+		E447C974ABF2AF6985197960 /* Pods-Focus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Focus.debug.xcconfig"; path = "Target Support Files/Pods-Focus/Pods-Focus.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,12 +106,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				738325275F1983B95950759B /* Pods_Focus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		554BEA4A36CE2EFEF253A49F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				081EE223125D81E2A4C7E2E9 /* Pods_Focus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		561197002486DCCB0098251C /* Tree */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +135,8 @@
 			children = (
 				562935D723F8971400F3F0D0 /* Focus */,
 				562935D623F8971400F3F0D0 /* Products */,
+				9F31FB0740A710BDB47A09C1 /* Pods */,
+				554BEA4A36CE2EFEF253A49F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +155,7 @@
 				566444DF2527736A00F39D24 /* States */,
 				56E490E42527DD1600D4D79C /* Components */,
 				5639337324670BD4005CB0C0 /* Nodes */,
+				569B8E6A25333518001F939A /* Views */,
 				5668539824708A17006A3D36 /* Storyboards */,
 				5668539924708A88006A3D36 /* Controllers */,
 				56C8E98A24001A06006E3802 /* Scenes */,
@@ -299,6 +319,23 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		569B8E6A25333518001F939A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				569B8E6B25333533001F939A /* Dialog */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		569B8E6B25333533001F939A /* Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				569B8E6C253337BC001F939A /* DialogView.xib */,
+				569B8E6F253337D9001F939A /* DialogView.swift */,
+			);
+			path = Dialog;
+			sourceTree = "<group>";
+		};
 		56B16DDD252F4DC200AC21B7 /* Effects */ = {
 			isa = PBXGroup;
 			children = (
@@ -376,6 +413,15 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		9F31FB0740A710BDB47A09C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E447C974ABF2AF6985197960 /* Pods-Focus.debug.xcconfig */,
+				8DCEAF13FFA7712D6312CB86 /* Pods-Focus.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -383,9 +429,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 562935ED23F8971500F3F0D0 /* Build configuration list for PBXNativeTarget "Focus" */;
 			buildPhases = (
+				977AC81319CD53906358719C /* [CP] Check Pods Manifest.lock */,
 				562935D123F8971400F3F0D0 /* Sources */,
 				562935D223F8971400F3F0D0 /* Frameworks */,
 				562935D323F8971400F3F0D0 /* Resources */,
+				EF588FFBD107BB2CD11D9887 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -403,7 +451,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Igor Starobor";
 				TargetAttributes = {
 					562935D423F8971400F3F0D0 = {
@@ -444,6 +492,7 @@
 				56889CFD2479FDE0009F3BF8 /* WaterWellScene.sks in Resources */,
 				56785C06252CC6180020C832 /* main_menu_background.mp3 in Resources */,
 				562935DB23F8971400F3F0D0 /* MainMenuScene.sks in Resources */,
+				569B8E6D253337BC001F939A /* DialogView.xib in Resources */,
 				562935E623F8971500F3F0D0 /* Assets.xcassets in Resources */,
 				562935E923F8971500F3F0D0 /* LaunchScreen.storyboard in Resources */,
 				561197042486DD0E0098251C /* TreeScene.sks in Resources */,
@@ -454,6 +503,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		977AC81319CD53906358719C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Focus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF588FFBD107BB2CD11D9887 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Focus/Pods-Focus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Focus/Pods-Focus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Focus/Pods-Focus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		562935D123F8971400F3F0D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -461,6 +552,7 @@
 			files = (
 				56889CFF2479FDF9009F3BF8 /* WaterWellScene.swift in Sources */,
 				56D063DF24D4BD67003D6A0A /* TouchHelper.swift in Sources */,
+				569B8E70253337D9001F939A /* DialogView.swift in Sources */,
 				56CF1F0E240484BB0064A02A /* SKSceneExtension.swift in Sources */,
 				56CF1F1024048D0E0064A02A /* AppBitMasks.swift in Sources */,
 				56F5992F2471723500E3EDD7 /* SKColorExtension.swift in Sources */,
@@ -534,6 +626,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -594,6 +687,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -624,6 +718,7 @@
 		};
 		562935EE23F8971500F3F0D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E447C974ABF2AF6985197960 /* Pods-Focus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Focus/System/Focus.entitlements;
@@ -631,7 +726,7 @@
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = MAFH3456M3;
 				INFOPLIST_FILE = Focus/System/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -647,6 +742,7 @@
 		};
 		562935EF23F8971500F3F0D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DCEAF13FFA7712D6312CB86 /* Pods-Focus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Focus/System/Focus.entitlements;
@@ -654,7 +750,7 @@
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = MAFH3456M3;
 				INFOPLIST_FILE = Focus/System/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -19,9 +19,9 @@ class InteractableMainHeroButtons: SKSpriteNode {
     
     var pressedButtons: [SKSpriteNode] = []
     
-    let talkButton  = SKSpriteNode(imageNamed: "leftMoveButton")
-    let actionButton = SKSpriteNode(imageNamed: "rightMoveButton")
-    let gameButton = SKSpriteNode(imageNamed: "rightMoveButton")
+    let talkButton  = SKSpriteNode(imageNamed: "talkButton")
+    let actionButton = SKSpriteNode(imageNamed: "actionButton")
+    let gameButton = SKSpriteNode(imageNamed: "gameButton")
     
     weak var inputDelegate: InteractableActionButtonsDelegate?
     

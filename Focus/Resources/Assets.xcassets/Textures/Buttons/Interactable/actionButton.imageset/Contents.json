@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "кнопки-14.png",
+      "filename" : "кнопки-13.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "кнопки-15.png",
+      "filename" : "кнопки-14.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "кнопки-16.png",
+      "filename" : "кнопки-15.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

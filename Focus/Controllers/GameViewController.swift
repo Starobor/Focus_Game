@@ -9,6 +9,7 @@
 import UIKit
 import SpriteKit
 import GameplayKit
+import SnapKit
 
 class GameViewController: UIViewController {
     
@@ -19,7 +20,15 @@ class GameViewController: UIViewController {
         
         configuredSKView()
         setMainMenuScene()
-        
+        let dialog = DialogView()
+        dialog.tag = 1002
+        self.view.addSubview(dialog)
+        dialog.snp.makeConstraints { (make) -> Void in
+            make.leading.equalTo(120)
+            make.trailing.equalTo(-120)
+            make.bottom.equalTo(-20)
+            make.height.equalTo(80)
+        }
     }
     
     func setSceneType<T: BaseMapScene>(_ type: T.Type) {
