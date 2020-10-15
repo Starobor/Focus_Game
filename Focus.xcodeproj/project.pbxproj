@@ -16,6 +16,15 @@
 		562935E423F8971400F3F0D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 562935E223F8971400F3F0D0 /* Main.storyboard */; };
 		562935E623F8971500F3F0D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 562935E523F8971500F3F0D0 /* Assets.xcassets */; };
 		562935E923F8971500F3F0D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 562935E723F8971500F3F0D0 /* LaunchScreen.storyboard */; };
+		562BB1AE2537C9FF002B90AF /* HorsePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562BB1AD2537C9FF002B90AF /* HorsePlayer.swift */; };
+		562BB1BF2537DC08002B90AF /* HorseRacingCML.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 562BB1BE2537DC08002B90AF /* HorseRacingCML.mlmodel */; };
+		562BB1C62537DCEA002B90AF /* PlayerDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562BB1C52537DCEA002B90AF /* PlayerDescriptionView.swift */; };
+		562BB1D12537E11A002B90AF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 562BB1D32537E11A002B90AF /* Localizable.strings */; };
+		562BB1D72537E17F002B90AF /* PlayerDescriptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 562BB1D92537E17F002B90AF /* PlayerDescriptionView.xib */; };
+		562BB1E22537E561002B90AF /* PlayersListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 562BB1E12537E561002B90AF /* PlayersListView.xib */; };
+		562BB1E52537E57A002B90AF /* PlayersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562BB1E42537E57A002B90AF /* PlayersListView.swift */; };
+		562BB1EE2537E947002B90AF /* GamblingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562BB1EC2537E947002B90AF /* GamblingViewController.swift */; };
+		562BB1EF2537E947002B90AF /* GamblingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 562BB1ED2537E947002B90AF /* GamblingViewController.xib */; };
 		56390102250AAF3A00347569 /* BaseMapScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56390101250AAF3A00347569 /* BaseMapScene.swift */; };
 		56390104250AC76400347569 /* MainCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56390103250AC76400347569 /* MainCharacter.swift */; };
 		56390108250ACA6400347569 /* BaseHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56390107250ACA6400347569 /* BaseHero.swift */; };
@@ -64,6 +73,21 @@
 		562935E523F8971500F3F0D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		562935E823F8971500F3F0D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		562935EA23F8971500F3F0D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		562BB1AD2537C9FF002B90AF /* HorsePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorsePlayer.swift; sourceTree = "<group>"; };
+		562BB1BE2537DC08002B90AF /* HorseRacingCML.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = HorseRacingCML.mlmodel; sourceTree = "<group>"; };
+		562BB1C52537DCEA002B90AF /* PlayerDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDescriptionView.swift; sourceTree = "<group>"; };
+		562BB1C82537E00E002B90AF /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Main.strings; sourceTree = "<group>"; };
+		562BB1C92537E00E002B90AF /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		562BB1CB2537E016002B90AF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		562BB1CC2537E016002B90AF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		562BB1D22537E11A002B90AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		562BB1D52537E120002B90AF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		562BB1D62537E122002B90AF /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		562BB1D82537E17F002B90AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PlayerDescriptionView.xib; sourceTree = "<group>"; };
+		562BB1E12537E561002B90AF /* PlayersListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayersListView.xib; sourceTree = "<group>"; };
+		562BB1E42537E57A002B90AF /* PlayersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersListView.swift; sourceTree = "<group>"; };
+		562BB1EC2537E947002B90AF /* GamblingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamblingViewController.swift; sourceTree = "<group>"; };
+		562BB1ED2537E947002B90AF /* GamblingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GamblingViewController.xib; sourceTree = "<group>"; };
 		56390101250AAF3A00347569 /* BaseMapScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMapScene.swift; sourceTree = "<group>"; };
 		56390103250AC76400347569 /* MainCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCharacter.swift; sourceTree = "<group>"; };
 		56390107250ACA6400347569 /* BaseHero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseHero.swift; sourceTree = "<group>"; };
@@ -151,6 +175,7 @@
 		562935D723F8971400F3F0D0 /* Focus */ = {
 			isa = PBXGroup;
 			children = (
+				562BB1AB2537C94D002B90AF /* Models */,
 				56393372246703EF005CB0C0 /* System */,
 				566444DF2527736A00F39D24 /* States */,
 				56E490E42527DD1600D4D79C /* Components */,
@@ -165,6 +190,57 @@
 				569178A12468543700286949 /* Resources */,
 			);
 			path = Focus;
+			sourceTree = "<group>";
+		};
+		562BB1A62537B3CA002B90AF /* CoreML */ = {
+			isa = PBXGroup;
+			children = (
+				562BB1BE2537DC08002B90AF /* HorseRacingCML.mlmodel */,
+			);
+			path = CoreML;
+			sourceTree = "<group>";
+		};
+		562BB1AB2537C94D002B90AF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				562BB1AC2537C956002B90AF /* CoreML */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		562BB1AC2537C956002B90AF /* CoreML */ = {
+			isa = PBXGroup;
+			children = (
+				562BB1AD2537C9FF002B90AF /* HorsePlayer.swift */,
+			);
+			path = CoreML;
+			sourceTree = "<group>";
+		};
+		562BB1C12537DC8E002B90AF /* HorseDescription */ = {
+			isa = PBXGroup;
+			children = (
+				562BB1D92537E17F002B90AF /* PlayerDescriptionView.xib */,
+				562BB1C52537DCEA002B90AF /* PlayerDescriptionView.swift */,
+			);
+			path = HorseDescription;
+			sourceTree = "<group>";
+		};
+		562BB1E02537E543002B90AF /* PlayersList */ = {
+			isa = PBXGroup;
+			children = (
+				562BB1E12537E561002B90AF /* PlayersListView.xib */,
+				562BB1E42537E57A002B90AF /* PlayersListView.swift */,
+			);
+			path = PlayersList;
+			sourceTree = "<group>";
+		};
+		562BB1EB2537E92F002B90AF /* GamblingVC */ = {
+			isa = PBXGroup;
+			children = (
+				562BB1EC2537E947002B90AF /* GamblingViewController.swift */,
+				562BB1ED2537E947002B90AF /* GamblingViewController.xib */,
+			);
+			path = GamblingVC;
 			sourceTree = "<group>";
 		};
 		56390100250AAEB100347569 /* Base */ = {
@@ -224,6 +300,7 @@
 		5668539924708A88006A3D36 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				562BB1EB2537E92F002B90AF /* GamblingVC */,
 				562935E023F8971400F3F0D0 /* GameViewController.swift */,
 			);
 			path = Controllers;
@@ -313,8 +390,10 @@
 		569178A12468543700286949 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				562BB1A62537B3CA002B90AF /* CoreML */,
 				56D063E024D5F15A003D6A0A /* Sounds */,
 				562935E523F8971500F3F0D0 /* Assets.xcassets */,
+				562BB1D32537E11A002B90AF /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -322,6 +401,8 @@
 		569B8E6A25333518001F939A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				562BB1E02537E543002B90AF /* PlayersList */,
+				562BB1C12537DC8E002B90AF /* HorseDescription */,
 				569B8E6B25333533001F939A /* Dialog */,
 			);
 			path = Views;
@@ -466,6 +547,8 @@
 			knownRegions = (
 				en,
 				Base,
+				uk,
+				ru,
 			);
 			mainGroup = 562935CC23F8971400F3F0D0;
 			productRefGroup = 562935D623F8971400F3F0D0 /* Products */;
@@ -493,11 +576,15 @@
 				56785C06252CC6180020C832 /* main_menu_background.mp3 in Resources */,
 				562935DB23F8971400F3F0D0 /* MainMenuScene.sks in Resources */,
 				569B8E6D253337BC001F939A /* DialogView.xib in Resources */,
+				562BB1EF2537E947002B90AF /* GamblingViewController.xib in Resources */,
 				562935E623F8971500F3F0D0 /* Assets.xcassets in Resources */,
 				562935E923F8971500F3F0D0 /* LaunchScreen.storyboard in Resources */,
+				562BB1D12537E11A002B90AF /* Localizable.strings in Resources */,
 				561197042486DD0E0098251C /* TreeScene.sks in Resources */,
 				56889CF12479ED9A009F3BF8 /* GardenScene.sks in Resources */,
 				56889CF32479EDAA009F3BF8 /* MarketGardenScene.sks in Resources */,
+				562BB1D72537E17F002B90AF /* PlayerDescriptionView.xib in Resources */,
+				562BB1E22537E561002B90AF /* PlayersListView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,6 +642,7 @@
 				569B8E70253337D9001F939A /* DialogView.swift in Sources */,
 				56CF1F0E240484BB0064A02A /* SKSceneExtension.swift in Sources */,
 				56CF1F1024048D0E0064A02A /* AppBitMasks.swift in Sources */,
+				562BB1AE2537C9FF002B90AF /* HorsePlayer.swift in Sources */,
 				56F5992F2471723500E3EDD7 /* SKColorExtension.swift in Sources */,
 				562935DF23F8971400F3F0D0 /* MainMenuScene.swift in Sources */,
 				56390104250AC76400347569 /* MainCharacter.swift in Sources */,
@@ -563,14 +651,18 @@
 				56889CF72479EDCF009F3BF8 /* MarketGardenScene.swift in Sources */,
 				56390102250AAF3A00347569 /* BaseMapScene.swift in Sources */,
 				56785AE7252A1F3D0020C832 /* AnimateComponent.swift in Sources */,
+				562BB1BF2537DC08002B90AF /* HorseRacingCML.mlmodel in Sources */,
 				56B16DD8252E2D9F00AC21B7 /* InteractableMainHeroButtons.swift in Sources */,
 				56E490E62527DD4000D4D79C /* PlayerControlComponent.swift in Sources */,
 				56785BFD252CB75B0020C832 /* HorseCharacter.swift in Sources */,
 				56889CF92479EDE6009F3BF8 /* GardenScene.swift in Sources */,
 				56D063DB24D4B5A9003D6A0A /* StringExtension.swift in Sources */,
 				562935E123F8971400F3F0D0 /* GameViewController.swift in Sources */,
+				562BB1E52537E57A002B90AF /* PlayersListView.swift in Sources */,
+				562BB1C62537DCEA002B90AF /* PlayerDescriptionView.swift in Sources */,
 				562935D923F8971400F3F0D0 /* AppDelegate.swift in Sources */,
 				561197062486DD1B0098251C /* TreeScene.swift in Sources */,
+				562BB1EE2537E947002B90AF /* GamblingViewController.swift in Sources */,
 				566444E12527738F00F39D24 /* NormalState.swift in Sources */,
 				56390108250ACA6400347569 /* BaseHero.swift in Sources */,
 				56E490E22527D17F00D4D79C /* TouchControlInput.swift in Sources */,
@@ -585,6 +677,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				562935E323F8971400F3F0D0 /* Base */,
+				562BB1C82537E00E002B90AF /* uk */,
+				562BB1CB2537E016002B90AF /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -593,8 +687,28 @@
 			isa = PBXVariantGroup;
 			children = (
 				562935E823F8971500F3F0D0 /* Base */,
+				562BB1C92537E00E002B90AF /* uk */,
+				562BB1CC2537E016002B90AF /* ru */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		562BB1D32537E11A002B90AF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				562BB1D22537E11A002B90AF /* en */,
+				562BB1D52537E120002B90AF /* ru */,
+				562BB1D62537E122002B90AF /* uk */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		562BB1D92537E17F002B90AF /* PlayerDescriptionView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				562BB1D82537E17F002B90AF /* Base */,
+			);
+			name = PlayerDescriptionView.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -604,6 +718,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -665,6 +780,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

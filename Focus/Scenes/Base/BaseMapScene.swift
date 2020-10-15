@@ -39,6 +39,25 @@ class BaseMapScene: SKScene {
         configureNodes()
         mainHero.setUpStateMachine()
         
+        let horse = HorsePlayer()
+        print(horse)
+        let ml = HorseRacingCML()
+        guard let output = try? ml.prediction(hSpeed: horse.hSpeed,
+                                              hAge: horse.hAge,
+                                              hWeight: horse.hWeight,
+                                              hState: Double(horse.hState?.rawValue ?? 0),
+                                              hExperience: horse.hExperience,
+                                              rAge: horse.rAge,
+                                              rWeight: horse.rWeight,
+                                              rExperience: horse.rExperience,
+                                              rState: Double(horse.rState?.rawValue ?? 0),
+                                              rFinancialCondition: horse.rFinancialCondition,
+                                              tDistance: horse.tDistance) else {
+            fatalError("Unexpected runtime error.")
+        }
+        print(output.viktories)
+        
+        
         if let pcComponent = mainHero.entity?.component(ofType: PlayerControlComponent.self) {
             pcComponent.cNode = mainHero
             pcComponent.setupControls(camera: camera!, scene: self)
