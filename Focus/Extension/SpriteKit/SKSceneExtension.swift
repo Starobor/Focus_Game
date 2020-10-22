@@ -6,3 +6,9 @@
 //  Copyright © 2020 Igor Starobor. All rights reserved.
 //
 
+import SpriteKit
+
+extension SKScene {
+    
+    
+}

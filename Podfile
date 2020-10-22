@@ -17,5 +17,8 @@ target 'Focus' do
   pod 'SnapKit', '~> 5.0.1'
   pod 'LayoutHelper'
   pod "VisualEffectView"
+  pod 'RxSwift', '6.0.0-rc.1'
+  pod 'RxCocoa', '6.0.0-rc.1'
+ 
 
 end

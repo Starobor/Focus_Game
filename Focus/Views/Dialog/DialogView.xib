@@ -12,7 +12,9 @@
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="oSa-FS-1cs"/>
                 <outlet property="speakerImageContainer" destination="jhm-Gz-0RD" id="Pvr-tB-4GH"/>
+                <outlet property="speakerImageView" destination="0if-AQ-nj7" id="jvz-F6-HFh"/>
                 <outlet property="textContainerView" destination="m6d-xL-Q31" id="feZ-ba-k6V"/>
+                <outlet property="textLabel" destination="JaD-ZU-pVo" id="QeS-2q-DHU"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -43,9 +45,11 @@
                                     </constraints>
                                     <state key="normal" image="dialogNext"/>
                                 </button>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JaD-ZU-pVo">
-                                    <rect key="frame" x="36" y="8" width="445" height="76"/>
-                                    <string key="text">- Hello!!! - Hello!!! - Hello!!! - Hello!!!- Hello!!! - Hello!!! - Hello!!!- Hello!!!- Hello!!! - Hello!!! - Hello!!! - Hello!!! - Hello!!! - Hello!!!- Hello!!! - Hello!!! - Hello!!!- Hello!!!- Hello!!! - Hello!!!  - Hello!!! - Hello!!! - Hello!!! - Hello!!!- Hello!!! - Hello!!! - Hello!!!- Hello!!!- Hello!!! - Hello!!! </string>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JaD-ZU-pVo">
+                                    <rect key="frame" x="40" y="12" width="437" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="PMI-RZ-2Nv"/>
+                                    </constraints>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
@@ -54,13 +58,13 @@
                             <color key="backgroundColor" name="appGrey"/>
                             <constraints>
                                 <constraint firstItem="NgE-KE-eLu" firstAttribute="centerY" secondItem="m6d-xL-Q31" secondAttribute="centerY" id="9hU-dE-nBg"/>
-                                <constraint firstItem="JaD-ZU-pVo" firstAttribute="leading" secondItem="2UG-Wy-gfe" secondAttribute="trailing" constant="8" id="Bpm-uT-mVw"/>
-                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="JaD-ZU-pVo" secondAttribute="bottom" constant="8" id="E0d-Kb-gpe"/>
+                                <constraint firstItem="JaD-ZU-pVo" firstAttribute="leading" secondItem="2UG-Wy-gfe" secondAttribute="trailing" constant="12" id="Bpm-uT-mVw"/>
+                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="JaD-ZU-pVo" secondAttribute="bottom" constant="12" id="E0d-Kb-gpe"/>
                                 <constraint firstAttribute="trailing" secondItem="NgE-KE-eLu" secondAttribute="trailing" constant="14" id="I6k-Fg-81D"/>
-                                <constraint firstItem="JaD-ZU-pVo" firstAttribute="top" secondItem="m6d-xL-Q31" secondAttribute="top" constant="8" id="KNv-TD-ryU"/>
+                                <constraint firstItem="JaD-ZU-pVo" firstAttribute="top" secondItem="m6d-xL-Q31" secondAttribute="top" constant="12" id="KNv-TD-ryU"/>
                                 <constraint firstItem="2UG-Wy-gfe" firstAttribute="centerY" secondItem="m6d-xL-Q31" secondAttribute="centerY" id="RnV-fU-Puq"/>
                                 <constraint firstItem="2UG-Wy-gfe" firstAttribute="leading" secondItem="m6d-xL-Q31" secondAttribute="leading" constant="14" id="TLc-dW-Z3L"/>
-                                <constraint firstItem="NgE-KE-eLu" firstAttribute="leading" secondItem="JaD-ZU-pVo" secondAttribute="trailing" constant="8" id="m2R-Pi-l3e"/>
+                                <constraint firstItem="NgE-KE-eLu" firstAttribute="leading" secondItem="JaD-ZU-pVo" secondAttribute="trailing" constant="12" id="m2R-Pi-l3e"/>
                             </constraints>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">

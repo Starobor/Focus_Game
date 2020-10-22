@@ -1,24 +1,38 @@
 PODS:
   - LayoutHelper (0.1.5)
+  - RxCocoa (6.0.0-rc.1):
+    - RxRelay (= 6.0.0-rc.1)
+    - RxSwift (= 6.0.0-rc.1)
+  - RxRelay (6.0.0-rc.1):
+    - RxSwift (= 6.0.0-rc.1)
+  - RxSwift (6.0.0-rc.1)
   - SnapKit (5.0.1)
   - VisualEffectView (4.1.1)
 
 DEPENDENCIES:
   - LayoutHelper
+  - RxCocoa (= 6.0.0-rc.1)
+  - RxSwift (= 6.0.0-rc.1)
   - SnapKit (~> 5.0.1)
   - VisualEffectView
 
 SPEC REPOS:
   trunk:
     - LayoutHelper
+    - RxCocoa
+    - RxRelay
+    - RxSwift
     - SnapKit
     - VisualEffectView
 
 SPEC CHECKSUMS:
   LayoutHelper: 54b1e44cf7a5bb5d8256f0ad805fce633454175d
+  RxCocoa: a28d75145c07b7547b85faf1e1ad8b25af88a752
+  RxRelay: 56abad6d32f73567858506d08735fdb341935b9a
+  RxSwift: dae1a32c48148897494b9e2a6b00a68b40694236
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   VisualEffectView: 2b2294dacd84ad69ad870ae04b2dc5b1e7724455
 
-PODFILE CHECKSUM: 5b355326c7a4fb8558d7f9c28841d674a5eb2abc
+PODFILE CHECKSUM: 434129b1bb61e9b5542e5d9a6bbf6a918c18d717
 
 COCOAPODS: 1.9.3

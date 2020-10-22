@@ -10,10 +10,22 @@ import SpriteKit
 import GameplayKit
 import AVKit
 
-class BaseMapScene: SKScene {
+protocol BaseMapSceneDelegate: class {
+    func didPressedSettings()
+}
+
+class BaseMapScene: SKScene, PlayerControlDelegate, PlayerInteractableDelegatet {
     
     var entities: [GKEntity] = []
     var graphs: [String : GKGraph] = [:]
+    
+    weak var baseSceneDelegate: BaseMapSceneDelegate?
+    
+    weak var moveComponent: PlayerControlComponent?
+    weak var interactComponent: PlayerInteractableButtonsComponent?
+    
+    
+    weak var parentVC: UIViewController?
     
     enum PressedScreenSide {
         case left
@@ -35,33 +47,29 @@ class BaseMapScene: SKScene {
     
     override func didMove(to view: SKView) {
         self.lastUpdateTime = 0
+        parentVC = self.view?.window?.rootViewController
+        
         configureScene()
         configureNodes()
         mainHero.setUpStateMachine()
+        configureComponents()
         
-        let horse = HorsePlayer()
-        print(horse)
-        let ml = HorseRacingCML()
-        guard let output = try? ml.prediction(hSpeed: horse.hSpeed,
-                                              hAge: horse.hAge,
-                                              hWeight: horse.hWeight,
-                                              hState: Double(horse.hState?.rawValue ?? 0),
-                                              hExperience: horse.hExperience,
-                                              rAge: horse.rAge,
-                                              rWeight: horse.rWeight,
-                                              rExperience: horse.rExperience,
-                                              rState: Double(horse.rState?.rawValue ?? 0),
-                                              rFinancialCondition: horse.rFinancialCondition,
-                                              tDistance: horse.tDistance) else {
-            fatalError("Unexpected runtime error.")
-        }
-        print(output.viktories)
-        
-        
+    }
+    
+    override func didSimulatePhysics() {
+        self.mainCamera.position = CGPoint(x: mainHero.position.x, y: mainHero.position.y + UIScreen.main.bounds.height/2)
+    }
+    
+    func configureScene() {
+        self.physicsWorld.contactDelegate = self
+    }
+    
+    func configureComponents() {
         if let pcComponent = mainHero.entity?.component(ofType: PlayerControlComponent.self) {
             pcComponent.cNode = mainHero
             pcComponent.setupControls(camera: camera!, scene: self)
             pcComponent.delegate = self
+            moveComponent = pcComponent
         }
         
         if let anComponent = mainHero.entity?.component(ofType: AnimateComponent.self) {
@@ -73,15 +81,14 @@ class BaseMapScene: SKScene {
             inbComponent.delegate = self
             inbComponent.setupControls(camera: camera!, scene: self)
             inbComponent.actionButtonslNode?.isHidden = selectedHero == nil
+            interactComponent = inbComponent
         }
-    }
-    
-    override func didSimulatePhysics() {
-        self.mainCamera.position = CGPoint(x: mainHero.position.x, y: mainHero.position.y + UIScreen.main.bounds.height/2)
-    }
-    
-    func configureScene() {
-        self.physicsWorld.contactDelegate = self
+        
+        if let settComponent = mainHero.entity?.component(ofType: SettingsButtonControlComponent.self) {
+            settComponent.cNode = mainHero
+            settComponent.delegate = self
+            settComponent.setupControls(camera: camera!, scene: self)
+        }
     }
     
     func configureNodes() {
@@ -122,7 +129,29 @@ class BaseMapScene: SKScene {
         mainCamera.setScale(6)
         self.addChild(mainCamera)
         self.camera = mainCamera
-        
+    }
+    
+    func showDialogWith(text: String, hero: Hero) {
+        removeDialog()
+        let dialog = DialogView(text: text, hero: hero)
+        parentVC?.view.addSubview(dialog)
+        dialog.delegate = self
+        dialog.snp.makeConstraints { (make) -> Void in
+            make.leading.equalTo(120)
+            make.trailing.equalTo(-120)
+            make.bottom.equalTo(-15)
+            make.height.equalTo(80)
+        }
+    }
+    
+    func removeDialog() {
+        if parentVC?.view.subviews.contains(where: {$0 is DialogView}) ?? true {
+            parentVC?.view.subviews.forEach({
+                if $0 is DialogView {
+                    $0.removeFromSuperview()
+                }
+            })
+        }
     }
     
     func touchDown(atPoint pos : CGPoint) {
@@ -140,7 +169,7 @@ class BaseMapScene: SKScene {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touchPoint = touches.first?.location(in: self) {
             self.beganPressednode = self.atPoint(touchPoint) as? SKSpriteNode
-           
+            
         }
     }
     
@@ -183,12 +212,22 @@ class BaseMapScene: SKScene {
             self.lastUpdateTime = currentTime
         }
         let dt = currentTime - self.lastUpdateTime
-
+        
         for entity in self.entities {
             entity.update(deltaTime: dt)
         }
         
         self.lastUpdateTime = currentTime
+    }
+    
+    
+    func follow(command: PlayerControlComponent.PlayerControlCommand) {
+        selectedHero = nil
+        interactComponent?.actionButtonslNode?.isHidden = true
+        
+    }
+    
+    func follow(command: PlayerInteractableButtonsComponent.InteractableButtonsCommand) {
         
     }
     
@@ -200,20 +239,19 @@ extension BaseMapScene: SKPhysicsContactDelegate {
     }
 }
 
-extension BaseMapScene: PlayerControlDelegate {
+
+extension BaseMapScene: SettingsButtonControlDelegatet {
     
-    func follow(command: PlayerControlComponent.PlayerControlCommand) {
-        if let inbComponent = mainHero.entity?.component(ofType: PlayerInteractableButtonsComponent.self) {
-            selectedHero = nil
-            inbComponent.actionButtonslNode?.isHidden = true
+    func didPressedButton() {
+        if let vc = self.view?.window?.rootViewController {
+            // let gamblingVC = GamblingViewController()
+            // gamblingVC.modalPresentationStyle = .overFullScreen
+            // vc.present(gamblingVC, animated: true)
         }
     }
+    
 }
 
-extension BaseMapScene: PlayerInteractableDelegatet {
-    
-    func follow(command: PlayerInteractableButtonsComponent.InteractableButtonsCommand) {
-        
-    }
+extension BaseMapScene: DialogViewDelegate {
     
 }

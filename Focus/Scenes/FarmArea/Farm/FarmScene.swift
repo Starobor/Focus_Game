@@ -9,16 +9,21 @@
 import SpriteKit
 import GameplayKit
 import AVKit
+import RxRelay
 
 class FarmScene: BaseMapScene {
     
     private var rabbitWalkingFrames: [SKTexture] = []
     
+    var trainigQuest: TrainingCowQuest?
+    
     override func didMove(to view: SKView) {
         super.didMove(to: view)
         let backgroundSound = AVPlayer(url: URL(string: "main_menu_background.mp3")!)
-        backgroundSound.play()        
-      
+        backgroundSound.play()
+        
+        trainigQuest = TrainingCowQuest(scene: self, delegate: self)
+        trainigQuest?.start()
     }
     
     override func didSimulatePhysics() {
@@ -70,6 +75,18 @@ class FarmScene: BaseMapScene {
         print(node.helloSentence)
     }
     
+    override func follow(command: PlayerControlComponent.PlayerControlCommand) {
+        super.follow(command: command)
+        trainigQuest?.use(command: command)
+    }
+    
 }
 
 
+extension FarmScene: TrainingCowQuestDelegate {
+    func currentTaskChanged() {
+        print("cahnged")
+    }
+    
+    
+}

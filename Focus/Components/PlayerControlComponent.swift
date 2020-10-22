@@ -31,6 +31,20 @@ class PlayerControlComponent: GKComponent, ControllerInputDelegate {
     var touchControlNode: TouchControlInput?
     var cNode: MainCharacter?
     
+    var enabled: Bool? {
+        get {
+           return touchControlNode?.allButtons.first?.isUserInteractionEnabled
+        }
+        set {
+            if let cNode = touchControlNode {
+                touchControlNode?.isUserInteractionEnabled = newValue ?? false
+                cNode.allButtons.forEach({
+                    $0.alpha = (newValue ?? false) ? cNode.alphaPressed : cNode.alphaUnpressed
+                })
+            }
+        }
+    }
+    
     weak var delegate: PlayerControlDelegate?
     
     func setupControls(camera: SKCameraNode, scene: SKScene) {
@@ -46,6 +60,7 @@ class PlayerControlComponent: GKComponent, ControllerInputDelegate {
             
         }
     }
+    
     
     func follow(command: String?) {
         if cNode != nil {
