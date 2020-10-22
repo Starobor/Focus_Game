@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "SettingsButton.setupCntrollers(size:):SettingsButton.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "settingsButton">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "BaseMapScene.didMove(to:):BaseMapScene.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "parentVC">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in SKScene.autoRecedingObserver(name:action:):SKSceneExtension.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = " NotificationCenter.default.removeObserver(strongSelf, name: name, object: nil)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GamblingViewController.showPlayersTab():GamblingViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "childView.players = data.players">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TrainingCowQuest.goNextTask():TrainingCowQuest.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "tasks.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GamblingViewController.didPressedMapButton(_:):GamblingViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "data.mapDescription">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GamblingContentView.setCurrentSelected(index:):GamblingContentView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "data.players">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
