@@ -14,7 +14,10 @@ protocol BaseMapSceneDelegate: class {
     func didPressedSettings()
 }
 
-class BaseMapScene: SKScene, PlayerControlDelegate, PlayerInteractableDelegatet {
+class BaseMapScene: SKScene, PlayerControlDelegate, PlayerInteractableDelegatet, GamblingViewDelegate {
+    
+    let players = HorseRacingDataPreparer(data: HorseRacingData())
+    var viewController: UIViewController?
     
     var entities: [GKEntity] = []
     var graphs: [String : GKGraph] = [:]
@@ -53,11 +56,25 @@ class BaseMapScene: SKScene, PlayerControlDelegate, PlayerInteractableDelegatet 
         configureNodes()
         mainHero.setUpStateMachine()
         configureComponents()
-        
+        mainCamera.position = CGPoint(x: mainHero.position.x,
+                                      y: mainHero.position.y + UIScreen.main.bounds.height / 2)
     }
     
+
     override func didSimulatePhysics() {
-        self.mainCamera.position = CGPoint(x: mainHero.position.x, y: mainHero.position.y + UIScreen.main.bounds.height/2)
+        let halfOfCameraWidth = mainCamera.calculateAccumulatedFrame().width / 2
+        let cameraY = mainHero.position.y + UIScreen.main.bounds.height / 2
+        let cameraStartX = mainHero.position.x - halfOfCameraWidth
+        let cameraEndX = mainHero.position.x + halfOfCameraWidth
+        guard let leftWall = childNode(withName: "leftWall")?.position,
+              let rightWall =  childNode(withName: "rightWall")?.position else { return }
+        if cameraStartX < leftWall.x {
+            mainCamera.position = CGPoint(x: leftWall.x + halfOfCameraWidth, y: cameraY)
+        } else if cameraEndX > rightWall.x {
+            mainCamera.position = CGPoint(x: rightWall.x - halfOfCameraWidth, y: cameraY)
+        } else {
+            mainCamera.position = CGPoint(x: mainHero.position.x, y: cameraY)
+        }
     }
     
     func configureScene() {
@@ -126,14 +143,14 @@ class BaseMapScene: SKScene, PlayerControlDelegate, PlayerInteractableDelegatet 
     
     func configureMainCamera() {
         mainCamera = SKCameraNode()
-        mainCamera.setScale(6)
+        mainCamera.setScale(4)
         self.addChild(mainCamera)
         self.camera = mainCamera
     }
     
-    func showDialogWith(text: String, hero: Hero) {
+    func showDialogWith(texts: [String], hero: Hero) {
         removeDialog()
-        let dialog = DialogView(text: text, hero: hero)
+        let dialog = DialogView(texts: texts, hero: hero)
         parentVC?.view.addSubview(dialog)
         dialog.delegate = self
         dialog.snp.makeConstraints { (make) -> Void in
@@ -190,9 +207,8 @@ class BaseMapScene: SKScene, PlayerControlDelegate, PlayerInteractableDelegatet 
     func pressed(node: SKSpriteNode) {
         if let selectedHero = node as? BaseHero {
             self.selectedHero = selectedHero
-            if let inbComponent = mainHero.entity?.component(ofType: PlayerInteractableButtonsComponent.self) {
-                inbComponent.actionButtonslNode?.isHidden = false
-            }
+            interactComponent?.actionButtonslNode?.isHidden = false
+            
             pressedHero(node: selectedHero)
         }
     }
@@ -224,12 +240,50 @@ class BaseMapScene: SKScene, PlayerControlDelegate, PlayerInteractableDelegatet 
     func follow(command: PlayerControlComponent.PlayerControlCommand) {
         selectedHero = nil
         interactComponent?.actionButtonslNode?.isHidden = true
-        
+        removeDialog()
     }
     
     func follow(command: PlayerInteractableButtonsComponent.InteractableButtonsCommand) {
+        switch command {
+        case .pressedTalk:
+            break
+        case .pressedAction:
+            print(selectedHero)
+        case .pressedGame:
+            interactComponent?.actionButtonslNode?.isHidden = true
+            let gamblingVC = GamblingViewController(data: players)
+            gamblingVC.delegate = self
+            gamblingVC.modalPresentationStyle = .overFullScreen
+            viewController?.present(gamblingVC, animated: false)
+        }
+    }
+    
+    func selected(index: Int) {
+        let model = HorseRacingCML()
+        print(index)
+        let selectedPlayer = players.data.horses[index]
+        for (horseIndex, horse) in players.data.horses.enumerated() {
+            guard let horsesOutput = try? model.prediction(hSp: horse.hSp, hAg: horse.hAg, hWe: horse.hWe, hSt: Double(horse.hSt?.rawValue ?? 0), hEx: horse.hEx, rAg: horse.rAg, rWe: horse.rWe, rEx: horse.rEx, rSt: Double(horse.rSt!.rawValue), rFi: horse.rFi, gDi: horse.gDi, gWe: horse.gWe, gTr: horse.gTr, gTi: horse.gTi, tDi: players.data.map.tDi, tWe: players.data.map.tWe, tTr: players.data.map.tTr, tTi: players.data.map.tTi) else {
+                fatalError("Unexpected runtime error.")
+            }
+            players.data.horses[horseIndex].viktories = Int(horsesOutput.victories)
+            print("player ID - \(players.data.horses[horseIndex].id)",
+                  "player rating - \(players.data.horses[horseIndex].viktories!)")
+        }
+        
+        let winer = players.data.horses.max(by: {$0.viktories ?? 0 < $1.viktories ?? 0})
+        
+        print("\nSelected player ID - \(selectedPlayer.id)",
+              "\nWiner player ID - \(winer!.id)")
+        if winer?.id == selectedPlayer.id {
+            showDialogWith(texts: ["Ви перемогли"], hero: .radio)
+        } else {
+            showDialogWith(texts: ["Ви програли"], hero: .radio)
+        }
         
     }
+    
+    
     
 }
 
@@ -243,11 +297,8 @@ extension BaseMapScene: SKPhysicsContactDelegate {
 extension BaseMapScene: SettingsButtonControlDelegatet {
     
     func didPressedButton() {
-        if let vc = self.view?.window?.rootViewController {
-            // let gamblingVC = GamblingViewController()
-            // gamblingVC.modalPresentationStyle = .overFullScreen
-            // vc.present(gamblingVC, animated: true)
-        }
+        removeDialog()
+        (viewController as? GameViewController)?.setMainMenuScene()
     }
     
 }

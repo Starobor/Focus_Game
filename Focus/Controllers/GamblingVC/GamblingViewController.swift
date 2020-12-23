@@ -15,6 +15,8 @@ protocol GamblingViewDelegate: class {
 
 class GamblingViewController: UIViewController {
 
+    @IBOutlet weak var blurContainer: UIView!
+    @IBOutlet weak var mainContainer: UIView!
     @IBOutlet weak var contentView: UIView!
     
     let data: BaseGamblingDataSource
@@ -33,7 +35,29 @@ class GamblingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.dark)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = blurContainer.bounds
+        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        blurContainer.addSubview(blurEffectView)
+        
+        
+        mainContainer.layer.cornerRadius = 12
+        mainContainer.layer.borderWidth = 3
+        mainContainer.layer.borderColor = UIColor.black.cgColor
+        mainContainer.backgroundColor = .appGrey
         showPlayersTab()
+        
+        
+        mainContainer.alpha = 0
+        blurContainer.alpha = 0
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        UIView.animate(withDuration: 0.5) {
+            self.mainContainer.alpha = 1
+            self.blurContainer.alpha = 1
+        }
     }
 
     @IBAction func didPressedMapButton(_ sender: Any) {
@@ -46,6 +70,7 @@ class GamblingViewController: UIViewController {
     
     func showMapTab() {
         if let childView = setAsChildOf(view: contentView, GamblingMapView.self) {
+            childView.prepareView(data: data.map)
             childView.delegate = self
         }
     }
@@ -63,10 +88,24 @@ class GamblingViewController: UIViewController {
 
 extension GamblingViewController: GamblingContentDelegate, GamblingMapDelegate {
     func didPressedSelectButton(atIndex: Int) {
-        delegate?.selected(index: atIndex)
+        let this = self
+        UIView.animate(withDuration: 0.5, animations: {
+            this.mainContainer.alpha = 0
+            this.blurContainer.alpha = 0
+        }, completion: { (_) in
+            this.delegate?.selected(index: atIndex)
+            this.dismiss(animated: false)
+        })
+       
     }
     
     func didPressedBackButton() {
-        self.dismiss(animated: true)
+        let this = self
+        UIView.animate(withDuration: 0.5, animations: {
+            this.mainContainer.alpha = 0
+            this.blurContainer.alpha = 0
+        }, completion: { (_) in
+            this.dismiss(animated: false)
+        })
     }
 }

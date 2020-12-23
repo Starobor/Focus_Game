@@ -78,7 +78,7 @@ class PlayerControlComponent: GKComponent, ControllerInputDelegate {
                 delegate?.follow(command: command)
                 print("command: \(command.rawValue)")
             } else {
-                print("command: \(command ?? "UNKNOWN") undefind")
+                print("command: \(command ?? "UNKNOWN") undefined")
             }
         }
     }

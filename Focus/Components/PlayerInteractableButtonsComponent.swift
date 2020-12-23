@@ -44,7 +44,7 @@ class PlayerInteractableButtonsComponent: GKComponent, InteractableActionButtons
     }
     
     func follow(command: String?) {
-        guard let command = command ?? "" else { return }
+        guard let command = command else { return }
         if cNode != nil {
             if command.contains("stop") {
                 if "stop \(previousComand)" == command {

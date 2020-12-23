@@ -10,8 +10,8 @@ import UIKit
 
 extension UIImage {
    
-    static let cowSpeakAvatar = #imageLiteral(resourceName: "cow")
-
+    static let cowSpeakAvatar = #imageLiteral(resourceName: "cowAvatar")
+    static let radioSpeakAvatar = #imageLiteral(resourceName: "radioAvatar")
     
     
 }

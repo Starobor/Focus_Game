@@ -41,6 +41,10 @@
 		56390102250AAF3A00347569 /* BaseMapScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56390101250AAF3A00347569 /* BaseMapScene.swift */; };
 		56390104250AC76400347569 /* MainCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56390103250AC76400347569 /* MainCharacter.swift */; };
 		56390108250ACA6400347569 /* BaseHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56390107250ACA6400347569 /* BaseHero.swift */; };
+		564BD6B12584E9DB00E754AC /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564BD6B02584E9DB00E754AC /* UIColorExtension.swift */; };
+		564BD6B62584EE6800E754AC /* antipastopro-demibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 564BD6B42584EC8200E754AC /* antipastopro-demibold.otf */; };
+		566072FA2586394C009F9599 /* CowCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566072F92586394C009F9599 /* CowCharacter.swift */; };
+		566072FD25867999009F9599 /* Names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566072FC25867999009F9599 /* Names.swift */; };
 		566444E12527738F00F39D24 /* NormalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566444E02527738F00F39D24 /* NormalState.swift */; };
 		56785ADF252A09910020C832 /* MainHeroActions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56785ADE252A09910020C832 /* MainHeroActions.sks */; };
 		56785AE7252A1F3D0020C832 /* AnimateComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56785AE6252A1F3D0020C832 /* AnimateComponent.swift */; };
@@ -55,11 +59,8 @@
 		568421E2253BC16600F022A9 /* HeroesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568421E1253BC16600F022A9 /* HeroesList.swift */; };
 		568421E8253BC6BF00F022A9 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568421E7253BC6BF00F022A9 /* UIImageViewExtension.swift */; };
 		568421EC253BCB0C00F022A9 /* NotificationCenterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568421EB253BCB0C00F022A9 /* NotificationCenterExtension.swift */; };
-		568421FE253BF76300F022A9 /* BaseQuest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568421FD253BF76300F022A9 /* BaseQuest.swift */; };
-		56842202253BF7A500F022A9 /* TrainingCowQuest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56842201253BF7A500F022A9 /* TrainingCowQuest.swift */; };
 		56842217253C1EA900F022A9 /* BaseActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56842216253C1EA900F022A9 /* BaseActions.swift */; };
 		5684221A253C858600F022A9 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56842219253C858600F022A9 /* Task.swift */; };
-		5684222E253CBB8500F022A9 /* QuestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5684222D253CBB8500F022A9 /* QuestManager.swift */; };
 		56889CE62479E1F1009F3BF8 /* FarmScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56889CE52479E1F1009F3BF8 /* FarmScene.sks */; };
 		56889CE82479E2A5009F3BF8 /* FarmScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56889CE72479E2A4009F3BF8 /* FarmScene.swift */; };
 		56889CF12479ED9A009F3BF8 /* GardenScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56889CF02479ED9A009F3BF8 /* GardenScene.sks */; };
@@ -131,6 +132,10 @@
 		56390101250AAF3A00347569 /* BaseMapScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMapScene.swift; sourceTree = "<group>"; };
 		56390103250AC76400347569 /* MainCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCharacter.swift; sourceTree = "<group>"; };
 		56390107250ACA6400347569 /* BaseHero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseHero.swift; sourceTree = "<group>"; };
+		564BD6B02584E9DB00E754AC /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		564BD6B42584EC8200E754AC /* antipastopro-demibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "antipastopro-demibold.otf"; sourceTree = "<group>"; };
+		566072F92586394C009F9599 /* CowCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CowCharacter.swift; sourceTree = "<group>"; };
+		566072FC25867999009F9599 /* Names.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Names.swift; sourceTree = "<group>"; };
 		566444E02527738F00F39D24 /* NormalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalState.swift; sourceTree = "<group>"; };
 		56785ADE252A09910020C832 /* MainHeroActions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainHeroActions.sks; sourceTree = "<group>"; };
 		56785AE6252A1F3D0020C832 /* AnimateComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateComponent.swift; sourceTree = "<group>"; };
@@ -145,11 +150,8 @@
 		568421E1253BC16600F022A9 /* HeroesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesList.swift; sourceTree = "<group>"; };
 		568421E7253BC6BF00F022A9 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		568421EB253BCB0C00F022A9 /* NotificationCenterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterExtension.swift; sourceTree = "<group>"; };
-		568421FD253BF76300F022A9 /* BaseQuest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseQuest.swift; sourceTree = "<group>"; };
-		56842201253BF7A500F022A9 /* TrainingCowQuest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingCowQuest.swift; sourceTree = "<group>"; };
 		56842216253C1EA900F022A9 /* BaseActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseActions.swift; sourceTree = "<group>"; };
 		56842219253C858600F022A9 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
-		5684222D253CBB8500F022A9 /* QuestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestManager.swift; sourceTree = "<group>"; };
 		56889CE52479E1F1009F3BF8 /* FarmScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FarmScene.sks; sourceTree = "<group>"; };
 		56889CE72479E2A4009F3BF8 /* FarmScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmScene.swift; sourceTree = "<group>"; };
 		56889CF02479ED9A009F3BF8 /* GardenScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GardenScene.sks; sourceTree = "<group>"; };
@@ -287,6 +289,10 @@
 		562BB1EB2537E92F002B90AF /* GamblingVC */ = {
 			isa = PBXGroup;
 			children = (
+				562BB2E82538AFFF002B90AF /* PlayerDescriptionCell */,
+				562BB1C12537DC8E002B90AF /* PlayerDescription */,
+				562BB2CE25389E59002B90AF /* MapTab */,
+				562BB2CD25389E33002B90AF /* ContentTab */,
 				562BB1EC2537E947002B90AF /* GamblingViewController.swift */,
 				562BB1ED2537E947002B90AF /* GamblingViewController.xib */,
 			);
@@ -303,10 +309,6 @@
 		562BB2CC25389DF5002B90AF /* Gambling */ = {
 			isa = PBXGroup;
 			children = (
-				562BB2E82538AFFF002B90AF /* PlayerDescriptionCell */,
-				562BB1C12537DC8E002B90AF /* PlayerDescription */,
-				562BB2CE25389E59002B90AF /* MapTab */,
-				562BB2CD25389E33002B90AF /* ContentTab */,
 			);
 			path = Gambling;
 			sourceTree = "<group>";
@@ -356,6 +358,7 @@
 				562BB2F42538B1ED002B90AF /* UIViewExtension.swift */,
 				562BB2FD2538CFAC002B90AF /* UIViewControllerExtension.swift */,
 				568421E7253BC6BF00F022A9 /* UIImageViewExtension.swift */,
+				564BD6B02584E9DB00E754AC /* UIColorExtension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				562E6146253A13BD00B2348B /* HorseRacingMap.swift */,
 				562E614B253A149C00B2348B /* HorseRacing.swift */,
 				568421DC253B5C4400F022A9 /* BasePlayerLocalizeDescription.swift */,
+				566072FC25867999009F9599 /* Names.swift */,
 			);
 			path = HorsesRacing;
 			sourceTree = "<group>";
@@ -411,12 +415,21 @@
 			path = Nodes;
 			sourceTree = "<group>";
 		};
+		564BD6B32584EC7500E754AC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				564BD6B42584EC8200E754AC /* antipastopro-demibold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		566444DE252771C300F39D24 /* Characters */ = {
 			isa = PBXGroup;
 			children = (
 				56785BFB252CB7140020C832 /* Base */,
 				56390103250AC76400347569 /* MainCharacter.swift */,
 				56785BFC252CB75B0020C832 /* HorseCharacter.swift */,
+				566072F92586394C009F9599 /* CowCharacter.swift */,
 			);
 			path = Characters;
 			sourceTree = "<group>";
@@ -500,8 +513,6 @@
 		568421FC253BF6BC00F022A9 /* Quest */ = {
 			isa = PBXGroup;
 			children = (
-				568421FD253BF76300F022A9 /* BaseQuest.swift */,
-				56842201253BF7A500F022A9 /* TrainingCowQuest.swift */,
 				56842216253C1EA900F022A9 /* BaseActions.swift */,
 				56842219253C858600F022A9 /* Task.swift */,
 			);
@@ -511,7 +522,6 @@
 		5684222C253CBB7800F022A9 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				5684222D253CBB8500F022A9 /* QuestManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -574,6 +584,7 @@
 		569178A12468543700286949 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				564BD6B32584EC7500E754AC /* Fonts */,
 				562BB1A62537B3CA002B90AF /* CoreML */,
 				56D063E024D5F15A003D6A0A /* Sounds */,
 				562935E523F8971500F3F0D0 /* Assets.xcassets */,
@@ -762,6 +773,7 @@
 				562935DB23F8971400F3F0D0 /* MainMenuScene.sks in Resources */,
 				569B8E6D253337BC001F939A /* DialogView.xib in Resources */,
 				562BB1EF2537E947002B90AF /* GamblingViewController.xib in Resources */,
+				564BD6B62584EE6800E754AC /* antipastopro-demibold.otf in Resources */,
 				562BB2F82538C992002B90AF /* GamblingMapView.xib in Resources */,
 				562BB2EC2538B04B002B90AF /* PlayerDescriptionCVC.xib in Resources */,
 				562935E623F8971500F3F0D0 /* Assets.xcassets in Resources */,
@@ -825,9 +837,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				568421D4253A7BA500F022A9 /* BaseGamblingPlayer.swift in Sources */,
+				564BD6B12584E9DB00E754AC /* UIColorExtension.swift in Sources */,
 				56889CFF2479FDF9009F3BF8 /* WaterWellScene.swift in Sources */,
 				56D063DF24D4BD67003D6A0A /* TouchHelper.swift in Sources */,
 				569B8E70253337D9001F939A /* DialogView.swift in Sources */,
+				566072FD25867999009F9599 /* Names.swift in Sources */,
 				56CF1F0E240484BB0064A02A /* SKSceneExtension.swift in Sources */,
 				56CF1F1024048D0E0064A02A /* AppBitMasks.swift in Sources */,
 				568421D7253A7C1700F022A9 /* BaseGamblingMap.swift in Sources */,
@@ -844,13 +858,13 @@
 				562BB2F12538B0DC002B90AF /* UICollectionViewExtension.swift in Sources */,
 				56390102250AAF3A00347569 /* BaseMapScene.swift in Sources */,
 				56785AE7252A1F3D0020C832 /* AnimateComponent.swift in Sources */,
-				56842202253BF7A500F022A9 /* TrainingCowQuest.swift in Sources */,
 				562E6147253A13BD00B2348B /* HorseRacingMap.swift in Sources */,
 				568421C9253A1DE300F022A9 /* HorseRacingDataPreparer.swift in Sources */,
 				568421E8253BC6BF00F022A9 /* UIImageViewExtension.swift in Sources */,
 				562BB2FE2538CFAC002B90AF /* UIViewControllerExtension.swift in Sources */,
 				562BB2AA25388109002B90AF /* BaseControllNode.swift in Sources */,
 				562BB2F52538B1ED002B90AF /* UIViewExtension.swift in Sources */,
+				566072FA2586394C009F9599 /* CowCharacter.swift in Sources */,
 				56B16DD8252E2D9F00AC21B7 /* InteractableMainHeroButtons.swift in Sources */,
 				56E490E62527DD4000D4D79C /* PlayerControlComponent.swift in Sources */,
 				562BB2B02538887D002B90AF /* SettingsButtonControlComponent.swift in Sources */,
@@ -870,8 +884,6 @@
 				562BB2AD25388616002B90AF /* SettingsButton.swift in Sources */,
 				568421DA253B456500F022A9 /* PlayerParametr.swift in Sources */,
 				56390108250ACA6400347569 /* BaseHero.swift in Sources */,
-				568421FE253BF76300F022A9 /* BaseQuest.swift in Sources */,
-				5684222E253CBB8500F022A9 /* QuestManager.swift in Sources */,
 				56E490E22527D17F00D4D79C /* TouchControlInput.swift in Sources */,
 				568421EC253BCB0C00F022A9 /* NotificationCenterExtension.swift in Sources */,
 				568421DD253B5C4400F022A9 /* BasePlayerLocalizeDescription.swift in Sources */,

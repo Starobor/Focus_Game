@@ -9,5 +9,6 @@
 import Foundation
 
 class BaseGamblingMap {
-    
+    var description: String = ""
+    var parametrs: [PlayerParametr] = []
 }

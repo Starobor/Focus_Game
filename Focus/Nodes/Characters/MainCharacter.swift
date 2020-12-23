@@ -19,7 +19,7 @@ class MainCharacter: BaseHero {
     }
    
     var hSpeed: CGFloat = 0
-    var walkSpeed: CGFloat = 6
+    var walkSpeed: CGFloat = 10
     
     var stateMachine: GKStateMachine?
     var playerState: PlayerState =  .stopRight

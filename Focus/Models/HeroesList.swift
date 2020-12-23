@@ -10,4 +10,5 @@ import Foundation
 
 enum Hero {
     case cow
+    case radio
 }
